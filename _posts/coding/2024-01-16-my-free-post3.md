@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Blog 😃
+title: **Blog 😃**
 date: 2024-04-02 17:29 +0900
 description: Developer Blog
 image: ../assets/img/blog.jpg
-category: 코딩
+category: 코딩 
 tags: 디자이너 개발자 코딩
 published: true
 sitemap: true
