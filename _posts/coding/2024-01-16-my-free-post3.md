@@ -3,7 +3,7 @@ layout: post
 title: Blog 😃
 date: 2024-04-02 17:29 +0900
 description: Developer Blog
-image: ../assets/img/blog img.jpg
+image: ../assets/img/blog.jpg
 category: 코딩
 tags: 디자이너 개발자 코딩
 published: true
@@ -15,5 +15,5 @@ sitemap: true
 
 
 [링크](https://github.com/Hyeji1364/class2024)
-![이미지](../assets/img/blog img.jpg)
+![이미지](../assets/img/blog.jpg)
 
