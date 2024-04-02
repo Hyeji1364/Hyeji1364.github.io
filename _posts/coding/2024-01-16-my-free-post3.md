@@ -15,4 +15,5 @@ sitemap: true
 
 
 [링크](https://github.com/Hyeji1364/class2024)
+![이미지](../assets/img/blog img.jpg)
 
