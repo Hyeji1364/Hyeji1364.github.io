@@ -20,12 +20,12 @@ sitemap: true
 
 <hr/>
 
-> 심연을 보면 나도 심연을 ㅂㅎㄴ더  
+> 심연을 보면 
 
 
 넝
 
-```javascript
+```
 
 <div class="result">
                     <details>
