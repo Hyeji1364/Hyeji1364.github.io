@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 자유
-date: 2024-04-07 16:30 +0900
+date: 2024-04-06 16:30 +0900
 description: Developer Blog
 image: ../assets/img/blog.jpg
 category: 자유
