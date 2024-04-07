@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 연산자
+title: 자바스크립트 연산자
 date: 2024-04-07 17:40 +0900
 description: 
 image: ../assets/img/Javascript.jpg

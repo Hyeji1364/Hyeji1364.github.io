@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 와 블로그!!
+title: 자바스크립트 자료형
 date: 2024-04-07 17:35 +0900
 description: 
 image: ../assets/img/Javascript.jpg

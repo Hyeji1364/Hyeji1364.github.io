@@ -4,7 +4,7 @@ title: 와 블로그!!
 date: 2024-04-07 17:35 +0900
 description: 
 image: 
-category: javascript
+category: 자유
 tags: js
 published: true
 sitemap: true
