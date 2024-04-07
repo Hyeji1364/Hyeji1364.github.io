@@ -4,7 +4,7 @@ title: **Blog 😃**
 date: 2024-04-02 17:29 +0900
 description: Developer Blog
 image: ../assets/img/blog.jpg
-category: 코딩 옥구공원
+category: 코딩, 옥구공원
 tags: 디자이너 개발자 코딩 벚꽃
 published: true
 sitemap: true
@@ -25,7 +25,7 @@ sitemap: true
 
 넝
 
-```
+```javascript
 
 <div class="result">
                     <details>
