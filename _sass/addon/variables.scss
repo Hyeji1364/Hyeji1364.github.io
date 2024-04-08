@@ -38,5 +38,12 @@ $code-icon-width: 1.75rem !default;
     font-style: normal;
 }
 
-$font-family-base: 'NanumSquareRound', 'Microsoft Yahei', sans-serif !default;
-$font-family-heading: 'NanumSquareRound', 'Microsoft Yahei', sans-serif !default;
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$font-family-base: 'TTLaundryGothicB', 'TTLaundryGothicB', sans-serif !default;
+$font-family-heading: 'TTLaundryGothicB', 'TTLaundryGothicB', sans-serif !default;
