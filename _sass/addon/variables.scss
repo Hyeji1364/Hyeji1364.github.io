@@ -36,7 +36,19 @@ $code-icon-width: 1.75rem !default;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+    @font-face {
+        font-family: 'SaenggeoJincheon';
+        font-weight: normal;
+        font-style: normal;
+        src: url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.eot');
+        src: url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.eot?#iefix') format('embedded-opentype'),
+            url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.woff2') format('woff2'),
+            url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.woff') format('woff'),
+            url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.ttf') format("truetype");
+        font-display: swap;
+    }
 }
 
-$font-family-base: 'NanumSquareRound', 'Microsoft Yahei', sans-serif !default;
-$font-family-heading: 'NanumSquareRound', 'Microsoft Yahei', sans-serif !default;
+$font-family-base: 'SaenggeoJincheon', 'Microsoft Yahei', sans-serif !default;
+$font-family-heading: 'SaenggeoJincheon', 'Microsoft Yahei', sans-serif !default;
