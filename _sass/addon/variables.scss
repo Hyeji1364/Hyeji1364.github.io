@@ -31,24 +31,19 @@ $code-dot-gap: 0.5rem !default;
 $code-icon-width: 1.75rem !default;
 
 /* fonts */
+
 @font-face {
-    font-family: 'NanumSquareRound';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-family: 'UtoNewYorKers';
     font-weight: normal;
     font-style: normal;
-
-    @font-face {
-        font-family: 'SaenggeoJincheon';
-        font-weight: normal;
-        font-style: normal;
-        src: url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.eot');
-        src: url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.eot?#iefix') format('embedded-opentype'),
-            url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.woff2') format('woff2'),
-            url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.woff') format('woff'),
-            url('https://cdn.jsdelivr.net/gh/webfontworld/SaenggeoJincheon/SaenggeoJincheon.ttf') format("truetype");
-        font-display: swap;
-    }
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/utoNewyorkers/UtoNewYorKers.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/utoNewyorkers/UtoNewYorKers.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/utoNewyorkers/UtoNewYorKers.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/utoNewyorkers/UtoNewYorKers.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/utoNewyorkers/UtoNewYorKers.ttf') format("truetype");
+    font-display: swap;
 }
 
-$font-family-base: 'SaenggeoJincheon', 'Microsoft Yahei', sans-serif !default;
-$font-family-heading: 'SaenggeoJincheon', 'Microsoft Yahei', sans-serif !default;
+
+$font-family-base: 'UtoNewYorKers', 'Microsoft Yahei', sans-serif !default;
+$font-family-heading: 'UtoNewYorKers', 'Microsoft Yahei', sans-serif !default;
