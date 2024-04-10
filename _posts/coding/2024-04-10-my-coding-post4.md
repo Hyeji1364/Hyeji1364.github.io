@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 자바스크립트 자료형
-date: 2024-04-10 22:00 +0900
+date: 2024-04-11 02:42 +0900
 description: 
 image: ../assets/img/Javascript.jpg
 category: CSS
