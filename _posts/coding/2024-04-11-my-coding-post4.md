@@ -3,16 +3,16 @@ layout: post
 title: CSS 문단 관련 스타일
 date: 2024-04-11 02:42 +0900
 description: 
-image: ../assets/img/css.png
+image: 
 category: CSS
-tags: CSS
+tags: CSS paragraph
 published: true
 sitemap: true
 ---
 
 ## CSS 
 
-#### 문단(paragtaph)관련 스타일
+#### 문단(paragraph)관련 스타일
 
 <hr />
 
@@ -74,6 +74,7 @@ word-wrap: break-word;
 </body>
 </html>
 ````
+
 ![alt text](image.png)
 
 ✅check-point
