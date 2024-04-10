@@ -9,9 +9,9 @@ tags: CSS
 published: true
 sitemap: true
 ---
-## <h1 style="color: #D75959;">css</h4>
+## <h1 style="color:#D86D6D">CSS</h1>
 
-#### <h4 style="color: #D75959;">선택자(selector)</h4>
+#### <h4 style="color:blue">선택자(selector)</h4>
 
 <hr />
 
@@ -42,7 +42,7 @@ h1 {
 ````
 
 
-> <h5 style="color: #D75959>선택자의 종류(selector)</h5>
+> <h5 style="color:yellow">선택자의 종류(selector)</h5>
 1️⃣ type 선택자 
 html문서의 태그 이름을 선택자로 사용할 수 있습니다.
 
