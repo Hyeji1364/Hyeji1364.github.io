@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 자바스크립트 자료형
+title: CSS 문단 관련 스타일
 date: 2024-04-11 02:42 +0900
 description: 
-image: ../assets/img/Javascript.jpg
+image: ../assets/img/css.png
 category: CSS
 tags: CSS
 published: true

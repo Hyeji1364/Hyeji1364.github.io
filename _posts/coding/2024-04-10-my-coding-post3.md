@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 자바스크립트 자료형
+title: CSS 선택자
 date: 2024-04-10 22:00 +0900
 description: 
-image: ../assets/img/Javascript.jpg
+image: ../assets/img/css.png
 category: CSS
 tags: CSS
 published: true
