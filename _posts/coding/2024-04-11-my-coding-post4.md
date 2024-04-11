@@ -5,10 +5,9 @@ date: 2024-04-11 09:42 +0900
 description: 
 image: 
 category: CSS
-tags: CSS paragraph
+tags: CSS 문단
 published: true
 sitemap: true
-published: true
 ---
 
 ## CSS 
