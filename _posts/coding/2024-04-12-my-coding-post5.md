@@ -3,7 +3,7 @@ layout: post
 title: jQuery 선택자
 date: 2024-04-12 12:48 +0900
 description: 
-image: 
+image: ../assets/img/jquery.jpg
 category: jQuery
 tags: jQuery 선택자
 published: true
