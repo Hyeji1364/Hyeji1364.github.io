@@ -3,9 +3,9 @@ layout: post
 title: CSS 선택자
 date: 2024-04-10 22:00 +0900
 description: 
-image: ../assets/img/css.png
+image: 
 category: CSS
-tags: CSS
+tags: CSS 선택자
 published: true
 sitemap: true
 ---
