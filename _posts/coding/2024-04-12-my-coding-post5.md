@@ -42,7 +42,6 @@ sitemap: true
 |요소[속성!='값']|$("span[class!='abc']")|span 요소 중 class가 'abc'가 아닌 요소를 선택합니다.|
 |요소[속성~='값']|$("span[class~='abc']")|span 요소 중 class가 'abc'를 포함하는 요소를 선택합니다.'abc' 앞뒤로 연결된 문자가 없어야 합니다. 'bg abc'는 선택되나 'bg_abc'는 선택되지 않습니다.|
 |요소[속성*='값']|$("span[class*='abc']")|span 요소 중 class가 'abc'를 포함하는 요소를 모두 선택합니다. 'bg abc','bg_abc' 모두 선택합니다.|
-|요소[속성|='값']|$("span[class|='abc']")|span 요소 중 class가 'abc'나 'abc-'로 시작하는 요소를 선택합니다.|
 |요소[속성^='값']|$("span[class^='abc']")|span 요소 중 class가 'abc'로 시작하는 요소를 선택합니다.|
 |요소[속성$='값']|$("span[class$='abc']")|span 요소 중 class가 'abc'로 끝나는 요소를 선택합니다.|
 
@@ -58,7 +57,8 @@ sitemap: true
 ✅th : table header의 약자로, 테이블의 헤더 셀을 나타냅니다.
 주로 테이블의 제목이나 카테고리를 표시하는데 사용됩니다.
 
-#### 필터 선택자의 종류
+* 필터 선택자의 종류
+
 |선택자 종류||설명|
 |------|---|---|
 |:even|$("tr:even")|tr 요소 중 짝수 행만 선택합니다.|
