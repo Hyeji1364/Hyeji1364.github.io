@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS 문단 관련 스타일
-date: 2024-04-11 09:42 +0900
+date: 2024-04-10 09:42 +0900
 description: 
 image: 
 category: CSS
@@ -74,8 +74,6 @@ word-wrap: break-word;
 </body>
 </html>
 ````
-
-![alt text](image.png)
 
 ✅check-point
 띄어쓰기 없는 긴 단어처럼 표현했는데도 word-wrap을 적용하여 줄바꿈 설정을 할 수 있네요!
