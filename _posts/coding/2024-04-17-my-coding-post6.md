@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 이미지 슬라이드
-date: 2024-04-17 16:43 +0900
+title: img tag? background tag?
+date: 2024-04-17 17:37 +0900
 description: 
 image: ../assets/img/image.jpg
 category: jQuery
@@ -52,8 +52,9 @@ sitemap: true
     <!-- 추가 이미지 -->
 </div>
 ````
+<br>
 
- ###### 2️⃣ CSS스타일링
+ > ###### 2️⃣ CSS스타일링
  슬라이드 컨테이너와 이미지에 대한 스타일을 CSS로 지정합니다.
  ````css
  .slideshow-container {
@@ -75,6 +76,8 @@ sitemap: true
     display: block; /* 활성화된 슬라이드만 표시됩니다. */
 }
 ````
+<br>
+
 ###### 3️⃣ jQuery로 슬라이드 기능 추가
 jQuery를 사용하여 이미지 슬라이드를 제어하는 스크립트를 작성합니다.
 
