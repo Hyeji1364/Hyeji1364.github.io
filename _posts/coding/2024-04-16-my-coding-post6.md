@@ -1,11 +1,11 @@
 ---
 layout: post
-title: jQuery를 이용한 이미지 슬라이드
+title: jQuery 선택자
 date: 2024-04-12 3:36 +0900
 description: 
-image: ../assets/img/jquery.jpg
+image: ../assets/img/imageslide.jpg
 category: jQuery
-tags: jQuery 이미지슬라이드 CSS
+tags: jQuery 선택자
 published: true
 sitemap: true
 ---
@@ -37,10 +37,10 @@ sitemap: true
 
 일단 이미지 슬라이드를 배우면서 Jquery로 사용하는것이 훨씬 간단하다고 생각되어 오늘은 Jquery로 이미지 슬라이드를 구현하는 방법에 대해 알아볼 것이다.
 
-> #### ✏ Jquery를 통한 이미지 슬라이드 구현
+> #### ✏ jQuery를 통한 이미지 슬라이드 구현
 
 <br>
 
 > ###### 1️⃣ 구조 설정
 
-이미지 슬라이드를 표시할 영역을 <div>요소로 감싸고, 각 이미지를 " <img>태그로 추가합니다.
+이미지 슬라이드를 표시할 영역을 <div>요소로 감싸고, 각 이미지를 <img>태그로 추가합니다.
