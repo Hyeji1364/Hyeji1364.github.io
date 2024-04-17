@@ -3,7 +3,7 @@ layout: post
 title: jQuery 선택자
 date: 2024-04-17 16:43 +0900
 description: 
-image: ../assets/img/imageslide.jpg
+image: ../assets/img/image.jpg
 category: jQuery
 tags: jQuery 선택자
 published: true
@@ -104,6 +104,9 @@ $(document).ready(function() {
 ````
 위 코드는 각 이미지를 3초 간격으로 자동으로 전환하는 기본적인 이미지 슬라이드쇼를 만드는 방법입니다.
 여기서는 각 슬라이드를 페이드 인/아웃 효과로 구현했습니다.
+
+
+그럼 추후에는 자바스크립트로 이미지 슬라이드 만들기에 대해서도 가져오겠습니다... Coming soon... 
 
 
 
