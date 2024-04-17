@@ -43,7 +43,7 @@ sitemap: true
 
 > ###### 1️⃣ HTML 구조 설정
 
-이미지 슬라이드를 표시할 영역을 <div>요소로 감싸고, 각 이미지를 <img>태그로 추가합니다.
+이미지 슬라이드를 표시할 영역을 <div>요소로 감싸고, 각 이미지를 img 태그로 추가합니다.
 
 ````html
 <div class="slideshow-container">
