@@ -1,16 +1,16 @@
 ---
 layout: post
 title: img태그와 background태그
-date: 2024-04-18 17:00 +0900
+date: 2024-04-18 19:00 +0900
 description: 
-image: ../assets/img/tagimg.gif
+image: 
 category: CSS
 tags: img background
 published: true
 sitemap: true
 ---
 
-## img 태그와 background 태그
+## 
 
 
 이미지를 표시하는데는 img 태그와 background 속성을 사용하는 두 가지 주요 방법이 있습니다. 각각의 방법은 특징과 용도에 따라 선택됩니다.
