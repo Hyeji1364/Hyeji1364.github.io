@@ -1,7 +1,7 @@
 ---
 layout: post
 title: img태그와 background태그
-date: 2024-04-17 16:43 +0900
+date: 2024-04-18 17:00 +0900
 description: 
 image: ../assets/img/tagimg.gif
 category: CSS
@@ -46,11 +46,52 @@ img태그의 'alt'속성은 이미지에 대한 대체 텍스트를 정의하는
 * 주로 디자인적인 목적으로 요소의 배경으로 이미지를 표시할 때 사용됩니다.
 * HTML 문서에서는 내용이 아닌 디자인적인 요소로서 이미지를 사용할 때 주로 배경 이미지가 선택됩니다.
 * 이미지에 대한 대체 텍스트를 제공할 수 없습니다.
+* 이러한 배경 이미지의 접근성 문제를 해결하기 위해 IR기법이 등장했습니다.
 
 ````html
 .element {
     background-image: url("example.jpg");
 }
 ````
+<br>
+
+> 🎈 IR(Image Replacement)기법
+
+IR기법을 사용하기 위한 태그로, 이미지를 배경 처리하고 그에 상응하는 내용을 텍스트로 기입해 역할이나 의도를 명시하는 방법입니다.
+보통 img태그에 alt 속성을 이용하면 따로 이 작업은 필요없지만, CSS background 속성을 이용해 이미지를 넣는 경우도 많기 때문에,
+모든 사용자에게 동등한 정보를 제공하기 위해 사용됩니다.
+
+IR기법 구현 방법
+CSS의 text-indent, position, overflow 등의 속성을 사용하여 이미지를 숨기고 텍스트를 표시하빈다.
+
+IR 기법의 장단점 :
+* 장점 : 이미지의 접근성을 높일 수 있습니다.
+* 단점 : 이미지가 로드되지 않을 경우 텍스트가 표시되지 않습니다.
+
+✅ 사용예시
+````html
+<p class="ir">이것은 이미지 대체 텍스트입니다.
+````
+
+````css
+.ir {
+    background-image: url('이미지 경로');
+    background-size: cover;
+    color: transparent;
+    text-indent: -9999px;
+}
+````
+위 코드에서 class="ir"로 설정된 요소는 이미지로 대체됩니다.
+background-image 속성은 대체할 이미지의 경로를 지정하고, background-size 속성은 이미지의 크기를 설정합니다.
+color 속성은 텍스트의 색상을 투명하게 설정하고,
+text-indent 속성은 텍스트를 화면에서 보이지 않게 합니다.
+
+<hr />
+
+✨ 추가 정보
+* 이미지 스프라이트 : 여러 개의 이미지를 하나의 이미지로 합쳐서 관리하는 기법입니다.
+이를 통해 웹페이지 로딩 속도를 향상시킬 수 있습니다.
+
+* WCAG 2.1 접근성 가이드라인: IR 기법은 WCAG 2.1의 인지의 용이성 원칙을 충족시키는 기술로 지정되어 있습니다.
 
 
