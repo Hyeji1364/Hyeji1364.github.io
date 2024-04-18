@@ -55,7 +55,9 @@ sitemap: true
 <br>
 
  > ###### 2️⃣ CSS스타일링
+
  슬라이드 컨테이너와 이미지에 대한 스타일을 CSS로 지정합니다.
+
  ````css
  .slideshow-container {
     position: relative;
@@ -79,6 +81,7 @@ sitemap: true
 <br>
 
 ###### 3️⃣ jQuery로 슬라이드 기능 추가
+
 jQuery를 사용하여 이미지 슬라이드를 제어하는 스크립트를 작성합니다.
 
 ````javascript
@@ -105,6 +108,7 @@ $(document).ready(function() {
     setInterval(slide, 3000);
 });
 ````
+
 위 코드는 각 이미지를 3초 간격으로 자동으로 전환하는 기본적인 이미지 슬라이드쇼를 만드는 방법입니다.
 여기서는 각 슬라이드를 페이드 인/아웃 효과로 구현했습니다.
 
