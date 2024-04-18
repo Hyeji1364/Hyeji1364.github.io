@@ -1,6 +1,6 @@
 ---
 layout: post
-title: img tag? background tag?
+title: 이미지 슬라이드
 date: 2024-04-17 17:37 +0900
 description: 
 image: ../assets/img/image.jpg
