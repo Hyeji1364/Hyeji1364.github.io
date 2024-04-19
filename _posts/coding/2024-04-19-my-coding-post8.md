@@ -3,7 +3,7 @@ layout: post
 title: 탭 메뉴
 date: 2024-04-19 03:50 +0900
 description: 
-image: 
+image: ../assets/img/webd.webp
 category: 웹디자인기능사
 tags: Tabmenu 웹디자인기능사
 published: true
