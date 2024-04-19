@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 메뉴유형
+title: Javascript 테스트
 date: 2024-04-19 14:20 +0900
 description: 
 image: ../assets/img/img.jpg
