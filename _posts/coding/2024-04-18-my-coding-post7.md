@@ -3,7 +3,7 @@ layout: post
 title: img태그와 background태그
 date: 2024-04-18 19:00 +0900
 description: 
-image: 
+image: ../assets/img/tagimg.gif
 category: CSS
 tags: img background
 published: true
