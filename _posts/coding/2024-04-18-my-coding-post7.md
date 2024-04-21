@@ -10,7 +10,7 @@ published: true
 sitemap: true
 ---
 
-## 
+## img태그와 background 태그
 
 
 이미지를 표시하는데는 img 태그와 background 속성을 사용하는 두 가지 주요 방법이 있습니다. 각각의 방법은 특징과 용도에 따라 선택됩니다.
