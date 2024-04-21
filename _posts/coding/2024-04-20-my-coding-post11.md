@@ -3,7 +3,7 @@ layout: post
 title: HTML
 date: 2024-04-20 22: +0900
 description: 
-image: ../assets/img/htmlgif.gif
+image: ../assets/img/html.gif
 category: HTML
 tags: HTML 텍스트
 published: true
