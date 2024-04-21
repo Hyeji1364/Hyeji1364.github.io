@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML
+title: HTML 텍스트 및 목록 관련 요소
 date: 2024-04-21 13:51 +0900
 description: 
 image: ../assets/img/html.gif
