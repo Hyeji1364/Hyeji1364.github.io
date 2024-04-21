@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML
-date: 2024-04-20 22: +0900
+date: 2024-04-21 13:51 +0900
 description: 
 image: ../assets/img/html.gif
 category: HTML
@@ -65,8 +65,6 @@ sitemap: true
 > ### 💛 목록 관련 요소
 
 #### <mark>블록 레벨 요소</mark>
-
-<br>
 
 #### 🎈 순서 목록 'ol'
 * Order List의 약자로 순서 목록을 정의할 때 사용하는 태그입니다.
