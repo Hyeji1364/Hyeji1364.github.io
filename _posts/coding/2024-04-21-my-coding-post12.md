@@ -4,7 +4,7 @@ title: CSS - position
 date: 2024-04-21 18:40 +0900
 description: 
 image: ../assets/img/blogcss.gif
-category: 
+category: CSS
 tags: CSS position
 published: true
 sitemap: true
