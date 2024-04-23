@@ -10,7 +10,7 @@ published: true
 sitemap: true
 ---
 
-## PHP
+## 🔊 PHP
 
 PHP는 "Personal Home Page Tools"의 약자로, 웹 개발을 위해 널리 사용되는 서버 측 스크립트 언어입니다.
 주로 동적인 웹 페이지와 웹 애플리케이션을 생성할 때 사용됩니다.
@@ -62,6 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="submit">
 </form>
 ````
+<br>
 ✅ 데이터베이스와의 상호작용
 
 PHP는 MySQL, PostgreSQL, SQLite 등 다양한 데이터베이스와 연동하여 데이터를 생성, 읽기, 수정, 삭제할 수 있습니다.
@@ -93,7 +94,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 ````
-
+<br>
 ✅ 사용자 세션 관리
 
 PHP는 세션을 통해 사용자의 로그인 상태를 관리하고 정보를 유지할 수 있습니다.
@@ -110,7 +111,7 @@ if (!isset($_SESSION['loggedin'])) {
 echo "안녕하세요, " . $_SESSION['username'] . "!";
 ?>
 ````
-
+<br>
 ✅ 파일 처리
 
 PHP는 파일을 읽고, 쓰고, 수정하는 기능을 지원합니다. 예를 들어, 파일에 내용을 쓰거나 읽을 수 있습니다.
@@ -127,7 +128,7 @@ $content = file_get_contents($file);
 echo $content;
 ?>
 ````
-
+<br>
 ✅ 이미지나 PDF 처리
 
 PHP는 GD 라이브러리나 Imagick을 사용하여 이미지를 생성하고 수정할 수 있습니다. 또한, PDF 파일생성을 위해 FPDF나 TCPDF같은 라이브러리를 사용할 수 있습니다.
