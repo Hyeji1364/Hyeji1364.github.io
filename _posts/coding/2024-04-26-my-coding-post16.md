@@ -4,7 +4,7 @@ title: 파이썬 크롤링
 date: 2024-04-26 17:00 +0900
 description: 파이썬으로 크롤링하기
 image: ../assets/img/python.gif
-category: 
+category: Python
 tags: 파이썬 python vscode
 published: true
 sitemap: true
