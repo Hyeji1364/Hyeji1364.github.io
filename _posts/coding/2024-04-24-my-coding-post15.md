@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP
+title: CSS
 date: 2024-04-24 23:20 +0900
 description: 기타 CSS 속성
 image: ../assets/img/blogcss.gif
