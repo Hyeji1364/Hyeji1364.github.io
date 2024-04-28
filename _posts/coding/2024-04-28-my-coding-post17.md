@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 자바스크립트 오답정리 (2)
-date: 2024-04-28 20:13 +0900
+date: 2024-04-28 20:24 +0900
 description: 자바스크립트 오답정리
-image: ../assets/img/javascript.jpg
+image: ../assets/img/Javascript.jpg
 category: Javascript
 tags: javascript 자바스크립트
 published: true
