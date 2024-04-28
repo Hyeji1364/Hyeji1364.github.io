@@ -21,7 +21,7 @@ sitemap: true
 
 ### 문제01
 <hr>
-01. 다음을 보고 결괏값을 작성하시오!
+다음을 보고 결괏값을 작성하시오!
 
 ````javascript
 {
@@ -203,8 +203,8 @@ b는 b -= a 연산을 통해 b - 4 계산 결과 0이 됩니다.<br>
 * k %= j;는 k = k % j;로, k = 30 % 19 계산 결과 k는 11이 됩니다.
 
 📝 콘솔 출력 결과 <br>
-<mark> console.log(i);는 1.0을 출력합니다.<br>
-console.log(j);는 19.0을 출력합니다.<br>
+<mark> console.log(i);는 1을 출력합니다.<br>
+console.log(j);는 19를 출력합니다.<br>
 console.log(k);는 11을 출력합니다.</mark><br>
 
 ✅ 최종 결과
