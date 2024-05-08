@@ -80,7 +80,7 @@ sitemap: true
 
 #### 🎈 input 태그 : 한줄 입력 요소
 
-##### ✅type: 입력 필드의 유형을 지정합니다 (text, password, email, checkbox, radio, 등)<br>
+##### ✅type: 입력 필드의 유형을 지정합니다 (text, password, email, checkbox, radio, 등)
 ##### ✅name: 폼 데이터와 함께 제출될 때 사용되는 필드의 이름을 지정합니다.<br>
 
 ##### ✅value: 입력 필드의 초기 값이나 버튼에 표시될 텍스트를 지정합니다.<br>
