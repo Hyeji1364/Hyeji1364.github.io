@@ -130,12 +130,11 @@ HTML에서 'button'태그는 사용자가클릭할 수 있는 버튼을 정의�
 
     <!-- 비활성화된 버튼 -->
     <button type="button" disabled>Disabled Button</button>
-
-    실행하면 다음과 같은 사진이 뜹니다.
-    ![image](https://github.com/Hyeji1364/class2024/assets/161557112/d882e81d-187a-4cf5-b19e-c58b851709b4)
-
-  
-
 </body>
 </html>
   ````
+      
+      
+      
+실행하면 다음과 같은 사진이 뜹니다.
+![image](https://github.com/Hyeji1364/class2024/assets/161557112/d882e81d-187a-4cf5-b19e-c58b851709b4)
