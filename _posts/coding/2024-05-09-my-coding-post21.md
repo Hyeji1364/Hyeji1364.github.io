@@ -45,7 +45,7 @@ outline-style, ouline-width, outline-color라는 속성들을 따로 부여할 �
 border와 outline 사이의 간격을 줄 때 outline-offset 속성을 사용할 수 있습니다.<br>
 다음은 그 사용 예시입니다.
 ````css
-border: 10px solid #aaa ;
+border: 10px solid aaa ;
 outline: 5px solid red;
 outline-offset: 2px;
 ````
