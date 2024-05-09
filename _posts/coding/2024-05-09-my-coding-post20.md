@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 폼 관련 요소 및 주요 속성 (2)
-date: 2024-05-01 20:25 +0900
+date: 2024-05-09 18:47 +0900
 description: 폼 관련 요소 및 주요 속성에 대해 알아보기!
 image: ../assets/img/html.gif
 category: HTML
