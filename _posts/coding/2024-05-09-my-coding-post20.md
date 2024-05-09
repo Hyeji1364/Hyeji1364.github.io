@@ -5,14 +5,14 @@ date: 2024-05-09 18:47 +0900
 description: 폼 관련 요소 및 주요 속성에 대해 알아보기!
 image: ../assets/img/html.gif
 category: HTML
-tags: HTML 폼요소
+tags: HTML 폼
 published: true
 sitemap: true
 ---
 
 ## HTML
 
-### 폼 관련 요소 및 주요 속성 (1)
+### 폼 관련 요소 및 주요 속성 (2)
 
 <hr>
 
