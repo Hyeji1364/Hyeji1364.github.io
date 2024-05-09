@@ -98,8 +98,6 @@ width와 height 속성은 테두리와 패딩을 포함한 요소의 전체 크�
 </html>
 ````
 
-예시 사진을 보여주면 이런 사진의 모양이 됩니다.<br>
-![image](https://github.com/Hyeji1364/class2024/assets/161557112/f35ef4bd-183d-4503-b288-4813b6a40ca0)
 
 ✅border-box 모델 예제<br>
 ````html
@@ -128,8 +126,6 @@ width와 height 속성은 테두리와 패딩을 포함한 요소의 전체 크�
 
 </html>
 ````
-이 사진의 예제를 적용하면 아래와 같은 사진이 됩니다.<br>
-![alt text](image-5.png)
 <br>
 
 8) box-shadow: CSS에서는 요소에 그림자를 발생시킬 수 있습니다. 이 때, box-shadow를 사용합니다.
