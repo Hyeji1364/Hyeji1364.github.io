@@ -35,15 +35,18 @@ Box Model은 모든 HTML 요소를 하나의 상자로 간주하고, 이 상자�
 4) <b>마진(Margin):</b> 요소와 이웃하는 다른 요소들 사이의 외부 공간입니다. 마진은 요소들 사이의 거리를 조절하는 데 사용됩니다.
 
 5) <b>width, height:</b>요소의 가로 크기, 세로 크기를 말하며 기본적으로 여백과 테두리를 포함하지 않습니다.<br>
+
 이와 함께 min-width, min-height, max-width, max-height 등이 있습니다.<br>
 - max-width: 414px; : 요소의 너비 값을 414px로 지정함
 - min-width: 1024px; : 요소의 가로 폭을 1024px 이상으로 지정함
 
 6) <b>outline:</b> border 영역 외곽에 테두리를 치는 속성입니다.
 outline은 두께가 늘어나도 주변에 공간을 확보하지 않으므로 레이아웃이 흐트러지지 않게 그저 영역 밖에 테두리를 표시할 뿐입니다.<br>
+
 outline-style, ouline-width, outline-color라는 속성들을 따로 부여할 수 있으나 위, 아래, 왼쪽, 오른쪽 따로 적용할 수 없고 네 면 공동으로 적용됩니다.<br>
 border와 outline 사이의 간격을 줄 때 outline-offset 속성을 사용할 수 있습니다.<br>
 다음은 그 사용 예시입니다.
+
 ````css
 border: 10px solid aaa ;
 outline: 5px solid red;
