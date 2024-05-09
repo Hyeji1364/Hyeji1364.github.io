@@ -89,8 +89,53 @@ HTML에서 'form'태그는 사용자 입력을 수집하기 위한 양식을 정
 - disabled: 옵션을 비활성화하여 사용자가 선택할 수 없게 합니다. <br>
 - label: 옵션을 설명하는 더 짧고 명확한 라벨을 제공할 때 사용합니다. 일반적으로 보이는 텍스트와 다를 수 있습니다.
 
-#### 🎈 04. option 태그
-✔ 요소 유형 : 인라인 요소 <br>
-✔ 태그의 의미 및 특징 <br>
+#### 🎈 04. button 태그
+✔ 태그의 의미<br>
 
-- 사용자 입력 태그 `input` , `textarea` , `select` 들에 대한 제목을 
+HTML에서 'button'태그는 사용자가클릭할 수 있는 버튼을 정의할 때 사용됩니다.<br>
+이 버튼은 폼 제출, 명령 실행, 사용자 상호작용 등 다양한 기능을 수행할 수 있으며, <form> 태그 안팎에서 사용될 수 있습니다.<br>
+<br>
+
+✔ button 태그의 특징
+- 유연성: 'button' 태그는 텍스트 또는 이미지와 같은 HTML 요소를 포함할 수 있어, 다양한 스타일과 내용의 버튼을 만들 수 있습니다. <br>
+- 속성<br>
+  1) type: 버튼의 유형을 지정합니다. 기본값은 "submit"이며, 폼을 제출할 때 사용됩니다. 다른 값으로는 "button", "reset"이 있습니다. "button"은 표준 버튼을, "reset"은 폼 입력 필드를 초기화하는 버튼을 만듭니다.<br>
+
+  2) disabled: 이 속성이 설정되면 버튼은 비활성화되어 사용자가 클릭할 수 없습니다.<br>
+
+  3) form: 버튼이 폼과 연결될 때, 해당 폼의 ID를 지정합니다. 이는 버튼이 해당 폼 외부에 위치할 때 유용합니다.<br>
+
+✅ 예제 코드
+
+  ````html
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Button Example</title>
+</head>
+<body>
+    <!-- 일반 버튼 -->
+    <button type="button" onclick="alert('Clicked!')">Click Me!</button>
+
+    <!-- 폼 제출 버튼 -->
+    <form action="/submit_form" method="post">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- 폼 리셋 버튼 -->
+    <form>
+        <input type="text" name="name" placeholder="Enter your name">
+        <button type="reset">Reset</button>
+    </form>
+
+    <!-- 비활성화된 버튼 -->
+    <button type="button" disabled>Disabled Button</button>
+
+    실행하면 다음과 같은 사진이 뜹니다.
+    ![image](https://github.com/Hyeji1364/class2024/assets/161557112/d882e81d-187a-4cf5-b19e-c58b851709b4)
+
+  
+
+</body>
+</html>
+  ````
