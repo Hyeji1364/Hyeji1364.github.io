@@ -201,4 +201,34 @@ true
 </div>
 </details>
 
-#### 05. 💛includes()
+#### 05. 💛indexOf()
+✔ 사용방식: array.indexOf(searchElement, fromIndex)<br>
+
+- 메서드는 배열을 검색하고, 주어진 값과 일치하는 첫 번째 인덱스를 반환합니다.
+- searchElement: 배열에서 찾고자 하는 요소입니다.
+- fromIndex (선택적): 검색을 시작할 인덱스입니다. 기본값은 0입니다.
+
+````javascript
+{
+let numbers = [1, 2, 3, 4, 5, 2];
+console.log(numbers.indexOf(2));         // 출력: 1
+console.log(numbers.indexOf(7));         // 출력: -1 (존재하지 않는 경우)
+console.log(numbers.indexOf(2, 2));      // 출력: 5 (인덱스 2 이후에 위치한 '2'의 인덱스)
+}
+````
+
+📍01. 기본예시 <br>
+여기서 'world'는 문자열 's'의 7번 인덱스에서 시작하기 때문에 '7'을 반환합니다.<br>
+'Python'은 문자열 's'에 존재하지 않기 때문에 '-1'이 반환됩니다.
+<br>
+📍02. 시작 인덱스와 끝 인덱스 사용하기<br>
+두 번째 호출은 인덱스 5부터 13까지의 범위에서 'over'문자열이 포함되어 있지 않으므로 '-1'이 출력됩니다.<br>
+
+<details>
+<summary>결과 확인하기</summary>
+<div>
+1<br>
+-1<br>
+5<br>
+</div>
+</details>
