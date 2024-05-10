@@ -61,6 +61,7 @@ console.log(text.substring(12, 7));  // 출력: 'world'
 'world!'<br>
 'world'<br>
 </div>
+</details>
 
 <br>
 
@@ -106,6 +107,7 @@ console.log(words);  // 출력: ['one', 'two']
 <div>
 ['apple', 'banana', 'cherry'] ['apple', 'banana', 'cherry'] ['one', 'two']
 </div>
+</details>
 
 #### 03. 💛 trim()
 ✔ 사용방법: 문자열.trim()
@@ -130,6 +132,7 @@ console.log(trimmedInput);  // 출력: "Hello, World!"
 <div>
 Hello, World!
 </div>
+</details>
 
 
 
@@ -180,6 +183,7 @@ console.log(newText);  // 출력: "Smith, John"
 "Do, do, do"<br>
 "Smith, John"<br>
 </div>
+</details>
 
 #### 04. 💛.search()
 ✔ 사용방식: string.search(regexp)
@@ -213,6 +217,7 @@ console.log(index);  // 출력: 8
 <div>
 7 7 8
 </div>
+</details>
 
 #### 05. 💛💛.slice()
 ✔ 사용방법: arrayOrString.slice(start, end)<br>
@@ -253,3 +258,4 @@ console.log(numbers.slice(-3));    // 출력: [3, 4, 5]
 '[2, 3]'<br>
 '[3, 4, 5]'<br>
 </div>
+</details>
