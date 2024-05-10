@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript 메서드 정리(2) - 문자열객체
-date: 2024-05-10 09:30 +0900
+title: Javascript 메서드 정리(3) - 배열 객체
+date: 2024-05-10 10:00 +0900
 description: 자바스크립트 메서드 
 image: ../assets/img/Javascript.jpg
 category: Javascript
@@ -12,100 +12,98 @@ sitemap: true
 
 ## Javascript
 
-### Javascript 메서드 정리(2)
-자바스크립트 메서드에 대해 두번째 정리입니다. <br>
+### Javascript 메서드 정리(3)
+자바스크립트 메서드에 대해 세번째 정리입니다. <br>
+메서드정리 1,2에서는 문자열 객체에 대해 다루었고, 이번 시간에는 배열 객체에 대해 다룰 예정입니다.<br>
 중요도에 따라 하트의 갯수가 1개부터 3개까지 입력됩니다.<br>
 
 <hr>
 
-### 01.💛substring()
+### 01.💛💛💛find()
 
-✔ 사용방법 : string.substring(indexStart, indexEnd)<br>
+✔ 사용방법 : const foundElement = 배열.find(function(element, index, array) {<br>
+<br>
+return 조건; // 조건이 true일 때 현재 요소를 반환 <br>
+});<br>
 
-📍indexStart: 추출을 시작할 인덱스입니다. <br>
-📍indexEnd (선택적): 추출을 종료할 인덱스입니다. <br>
-이 인덱스는 결과에 포함되지 않습니다. 이 매개변수를 생략하면 문자열의 끝까지 추출합니다.<br>
-
-- 메서드는 문자열에서 시작 위치에서 종료 위치 값을 추출하여, 새로운 문자열을 반환합니다.
-1. 인덱스 순서: 'indexStart'가 'indexEnd'보다 크면 .substring()은 두 인덱스를 자동으로 스왑합니다.
-예를 들어, substring(10, 5)는 substring(5, 10)으로 처리됩니다.
-2.음수 인덱스: .substring()은 음수 인덱스를 처리하지 않습니다. 음수 값은 자동으로 0으로 취급됩니다.
-- 반환 값 : 지정된 부분 문자열을 반환합니다.
-- 인덱스 값이 혼동될 경우 자동으로 조정해주는 특성이 있어 편합니다.
+- 메서드는 주어진 판별 함수를 만족하는 첫 번째 요소의 값을 반환합니다.
+- javascript에서 배열의 요소들을 순회하며 주어진 조건을 만족하는 첫 번째 요소를 찾아 반환하는 함수입니다.
+- 이 메서드는 콜백 함수를 인자로 받고, 이 콜백 함수는 각 요소를 평가하여 조건에 맞는지 확인합니다.
+- 조건에 맞는 첫 번째 요소를 찾으면 그 요소를 반환하고, 만약 조건을 만족하는 요소가 없으면 undefined를 반환합니다.
+- find() 메서드는 원본 배열을 변경하지 않습니다.
 
 ````javascript
 {
-// 01. 기본 사용 예시:
-let text = "Hello, world!";
-console.log(text.substring(7, 12));  // 출력: 'world'
-console.log(text.substring(7));     // 출력: 'world!'
+// 01. 객체 배열에서 특정 조건을 만족하는 객체 찾기:
+const products = [
+    { id: 1, name: 'Keyboard', price: 29.99 },
+    { id: 2, name: 'Mouse', price: 19.99 },
+    { id: 3, name: 'Monitor', price: 99.99 }
+];
 
-// 02. 인덱스 스왑 예시:
-let text = "Hello, world!";
-console.log(text.substring(12, 7));  // 출력: 'world'
+const cheapProduct = products.find(function(product) {
+    return product.price < 30; // 가격이 30 미만인 제품 찾기
+});
+
+console.log(cheapProduct); // 출력: { id: 1, name: 'Keyboard', price: 29.99 }
+
+
+// 02. 배열에서 특정 숫자 찾기:
+const numbers = [5, 12, 8, 130, 44];
+const firstLargeNumber = numbers.find(function(number) {
+    return number > 10;
+});
+
+console.log(firstLargeNumber); // 출력: 12
+
 }
 ````
 ✅ 부연 설명<br>
-1. 기본 사용 예시:
-첫 번째 예에서는 인덱스 7부터 12까지의 문자열 "world"를 반환합니다.<br>
-두 번째 예에서는 인덱스 7부터 문자열의 끝까지 "world!"를 반환합니다.<br>
-
-2. 인덱스 스왑 예시:
-이 예에서 .substring() 메소드는 indexStart와 indexEnd의 순서를 스왑하여 "world"를 정상적으로 추출합니다.<br>
+02. 배열에서 특정 숫자 찾기'<br>
+'numbers' 배열에서 10보다 큰 첫 번째 숫자를 찾습니다. 조건에 맞는 첫 번째 숫자는 12이므로, 12가 출력됩니다.<br>
 
 
 <details>
 <summary>결과 확인하기</summary>
 <div>
-'world'<br>
-'world!'<br>
-'world'<br>
+{ id: 1, name: 'Keyboard', price: 29.99 }<br>
+12<br>
 
 <br>
 
-#### 02. 💛💛💛split()
-✔ 사용방법: string.split(separator, limit)
-
-📍separator: 문자열을 나눌 기준이 되는 구분자입니다.<br>
-이 값은 문자열 또는 정규 표현식일 수 있습니다. 구분자를 생략하거나 빈 문자열을 전달하면 전체 문자열이 하나의 요소로 포함된 배열이 반환됩니다.
+#### 02. 💛💛💛forEach()
+✔ 사용방법: "배열.forEach(function(element, index, array) {<br>
 <br>
-📍 limit (선택적): 반환될 배열의 최대 요소 수를 지정합니다. 이 값이 설정되면, 결과 배열은 최대 limit 개의 요소를 포함하게 됩니다.<br>
-반환 값 : 구분자로 나누어진 문자열의 배열을 반환합니다.
+});<br>
+
+`element`: 요소 / index : 인덱스 / array: forEach가 호출된 배열
 <br>
 
-- 메서드는 문자열을 구분자로 구분하고, 여러 개의 문자열(배열)을 반환합니다.
-- 문자열을 배열로 분리하는데 사용됩니다.
-- 구분자는 생략할 수 있습니다.
+- forEach()메서드는 주어진 함수 조건을 배열 요소 각각에 대해 실행하고, 그 결과를 반환합니다.
+- JavaScript의 배열 메서드 중 하나로, 배열의 각 요소에 대해 주어진 함수를 한 번 씩 실행합니다.
+- 이 메서드는 배열의 각 요소마다 콜백 함수를 호출하면서, 요소 자체와 요소의 인덱스, 그리고 배열 전체를 인자로 전달합니다.
+- forEach() 메서드는 원본 배열을 수정하지 않으며 반환값도 없습니다(즉, undefined를 반환합니다).
+- 이 메서드는 주로 배열 내 각 요소에 대해 연산을 수행하거나 결과를 출력하는 등의 작업에 사용됩니다.
 
 ````javascript
 {
-// 01. 기본 사용 예시
-// 이 예에서는 ", "를 구분자로 사용하여 문자열을 세 부분으로 나누고, 각 부분이 배열의 요소가 됩니다.
-let text = "apple, banana, cherry";
-let fruits = text.split(", ");
-console.log(fruits);  // 출력: ['apple', 'banana', 'cherry']
-
-// 02. 정규 표현식 사용 예시
-// 여기서는 공백 문자(\s+)를 기준으로 문자열을 나누었습니다.
-// 정규 표현식 /s+는 하나 이상의 공백을 의미합니다.
-et text = "apple banana cherry";
-let fruits = text.split(/\s+/);
-console.log(fruits);  // 출력: ['apple', 'banana', 'cherry']
-
-// 03. Limit 매개변수 사용 예시
-// 이 예에서는 공백을 구분자로 사용하고, limit을 2로 설정하여 최대 두 개의 요소만 포함하는 배열을 생성합니다.
-let text = "one two three four";
-let words = text.split(" ", 2);
-console.log(words);  // 출력: ['one', 'two']
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function(number, index) {
+    console.log(`Index ${index}: ${number}`);
+});
 }
 ````
 
 <details>
 <summary>결과 확인하기</summary>
 <div>
-['apple', 'banana', 'cherry'] ['apple', 'banana', 'cherry'] ['one', 'two']
+Index 0: 1<br>
+Index 1: 2<br>
+Index 2: 3<br>
+Index 3: 4<br>
+Index 4: 5<br>
 
-#### 03. 💛 trim()
+#### 03. 💛filter()
 ✔ 사용방법: 문자열.trim()
 - 문자열 앞과 뒤에 있는공백이 제거된 새 문자열을 반환합니다.
 - 메서드는 문자열의 앞/뒤 공백을 제거하고, 새로운 문자열을 반환합니다.
