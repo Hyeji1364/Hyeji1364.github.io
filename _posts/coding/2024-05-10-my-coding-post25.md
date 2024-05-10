@@ -44,6 +44,7 @@ console.log(text.includes("o", 5));   // 출력: true (인덱스 5부터 'o' 검
 true<br>
 false<br>
 true<br>
+</div>
 
 <br>
 
@@ -76,6 +77,7 @@ console.log(text.indexOf("o", 5));    // 출력: 8 (인덱스 5 이후의 'o' �
 4<br>
 -1<br>
 8<br>
+</div>
 
 #### 03. 💛match()
 ✔ 사용방법: string.match(regexp)
@@ -120,6 +122,7 @@ while ((matches = regex.exec(text)) !== null) {
 ["Repeat", "repeat", "repeat"]<br>
 "John is 34 years old."<br>
 "Sarah is 32 years old."<br>
+</div>
 
 ✅ 부연 설명<br>
 02. 글로벌검색 <br>
@@ -178,6 +181,7 @@ console.log(newText);  // 출력: "Smith, John"
 "Hello, everyone!"<br>
 "Do, do, do"<br>
 "Smith, John"<br>
+</div>
 
 #### 04. 💛.search()
 ✔ 사용방식: string.search(regexp)
@@ -210,6 +214,7 @@ console.log(index);  // 출력: 8
 <summary>결과 확인하기</summary>
 <div>
 7 7 8
+</div>
 
 #### 05. 💛💛.slice()
 ✔ 사용방법: arrayOrString.slice(start, end)<br>
@@ -249,3 +254,4 @@ console.log(numbers.slice(-3));    // 출력: [3, 4, 5]
 'world!'<br>
 '[2, 3]'<br>
 '[3, 4, 5]'<br>
+</div>

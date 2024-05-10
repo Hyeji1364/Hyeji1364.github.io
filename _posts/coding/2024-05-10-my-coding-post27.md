@@ -104,76 +104,72 @@ Index 3: 4<br>
 Index 4: 5<br>
 
 #### 03. 💛filter()
-✔ 사용방법: 문자열.trim()
-- 문자열 앞과 뒤에 있는공백이 제거된 새 문자열을 반환합니다.
-- 메서드는 문자열의 앞/뒤 공백을 제거하고, 새로운 문자열을 반환합니다.
-- 여기서 말하는 '공백'에는 스페이스, 탭, 줄바꿈 등이 포함됩니다.
-- 이 메소드는 문자열 가운데 있는 공백은 건드리지 않고, 앞과 뒤의 공백만 제거합니다.
-- .trim()은 데이터를 정리하거나, 불필요한 공백 때문에 발생할 수 있는 오류를 방지하는 데 유용하게 사용됩니다.
-- 이 메소드는 원본 문자열을 변경하지 않고, 새로운 정리된 문자열을 반환합니다.
+✔ 사용방법: const newArray = 배열.filter(function(element, index, array) { <br>
+<br>
+return 조건; // 조건이 true일 때 요소를 새 배열에 포함<br>
+});<br>
 
+`element`: 배열에서 현재 처리 중인 요소입니다.<br>
+`index`: 배열에서 현재 처리 중인 요소의 인덱스입니다.<br>
+`array`: filter()가 호출된 배열입니다.
+<br>
 
-````javascript
-{
-let userInput = "   Hello, World!   ";
-let trimmedInput = userInput.trim();
-console.log(trimmedInput);  // 출력: "Hello, World!"
-}
-````
-
-<details>
-<summary>결과 확인하기</summary>
-<div>
-Hello, World!
-
-
-
-#### 04. 💛replace()
-✔ 사용방식: string.replace(searchValue, newValue)
-📍searchValue: 대체하고자 하는 문자열이나 정규 표현식입니다.
-📍newValue: searchValue를 대체할 문자열이거나, 매치된 부분을 다루는 함수가 될 수 있습니다.
-
-- 메서드는 문자열에서 특정 문자열을 교체하여, 새로운 문자열을 반환합니다.
-- 이 메소드는 문자열의 첫 번째 일치 항목만 대체하거나, 정규 표현식과 함께 사용하여 글로벌로 여러 항목을 대체할 수 있습니다.
-- 메서드는 문자열에서 특정 문자열을 교체하여, 새로은 문자열을 반환합니다.
-
+- 이 메서드는 주어진 함수 조건에 맞는 모든 요소를 새로운 배열로 반환합니다.
+- 콜백 함수를 인자로 받으며, 이 콜백 함수는 각 요소를 평가하여 'true' 또는 'false'를 반환합니다.
+- true를 반환하는 요소만이 새 배열에 포함됩니다.
+- filter()는 원본 배열을 변경하지 않으며, 조건에 맞는 요소들로 구성된 새로운 배열을 반환합니다.
 
 ````javascript
 {
-// 01. 문자열로 대체하기
-// 문자열을 사용해 대체하는 경우, 가장 첫 번째로 찾은 'searchValue'에 해당하는 부분만 'newValue'로 바뀝니다.
-let text = "Hello, world!";
-let newText = text.replace("world", "everyone");
-console.log(newText);  // 출력: "Hello, everyone!"
-
-// 02. 정규 표현식과 함께 사용하기
-// 정규 표현식을 사용할 경우, g 플래그를 사용하여 문자열 전체에서 모든 일치하는 항목을 대체할 수 있습니다.
-let text = "Repeat, repeat, repeat";
-let newText = text.replace(/repeat/gi, "do");
-console.log(newText);  // 출력: "Do, do, do"
-
-// 03. 함수를 사용하여 대체하기
-// newValue에 함수를 사용하는 경우, 각 일치 항목에 대해 이 함수가 호출되며, 함수의 반환값으로 해당 항목이 대체됩니다.
-// 이 함수는 여러 인자를 받을 수 있으며, 일반적으로 다음과 같은 매개변수를 포함합니다:
-
-let text = "John Smith";
-let newText = text.replace(/(\w+) (\w+)/, function(match, p1, p2) {
-    return `${p2}, ${p1}`; // 성과 이름의 위치를 바꿈
+const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter(function(number) {
+    return number % 2 === 0; // 짝수 조건
 });
-console.log(newText);  // 출력: "Smith, John"
+console.log(evenNumbers); // 출력: [2, 4, 6]
 }
 ````
-`match`: 일치하는 전체 문자열
-`p1, p2, ...`: 캡처된 그룹, 정규 표현식 내부의 괄호(())에 의해 캡처된 각 그룹
-`offset`: 원본 문자열에서 일치하는 항목이 시작되는 인덱스
-`string`: 원본 전체 문자열
+
+위의 예시에서는 숫자 배열에서 짝수만 필터링하여 새로운 배열을 생성하는 방법을 보여줍니다.<br>
+이 코드는 배열 numbers의 각 요소를 콜백 함수에 전달하고, 짝수인지 확인합니다.<br>
+짝수일 경우 true를 반환하며, 이 때문에 해당 요소는 evenNumbers 배열에 포함됩니다.<br>
 
 <details>
 <summary>결과 확인하기</summary>
 <div>
-"Hello, everyone!"<br>
-"Do, do, do"<br>
-"Smith, John"<br>
+[2, 4, 6]
+
+
+
+#### 04. 💛💛💛map()
+✔ 사용방식: const newArray = 배열.map(function(element, index, array){ <br>
+<br>
+return 새로운 값;<br>
+});<br>
+
+- 이 메서드는 주어진 함수를 호출하여 각 요소에 대한 결과를 모아 새로운 배열을 만듭니다.
+- 이 메서드는 원본 배열의 모든 요소를 하나씩 처리하여 그 결과를 새 배열의 해당 위치에 저장합니다.
+- map()은 배열의 길이를 변경하지 않고, 원본 배열은 수정하지 않으면서 각 요소에 대해 주어진 함수를 실행한 결과로 구성된 새 배열을 반환합니다.
+- map() 메서드는 데이터를 변환하거나 수정하여 새로운 형태의 데이터를 생성할 때 매우 유용합니다.
+- 예를 들어, 객체 배열에서 특정 키의 값을 수정하거나 새로운 키를 추가하는 등의 작업에 자주 사용됩니다.
+
+
+````javascript
+{
+const numbers = [1, 2, 3, 4, 5];
+const squaredNumbers = numbers.map(function(number) {
+    return number * number; // 각 숫자를 제곱
+});
+console.log(squaredNumbers); // 출력: [1, 4, 9, 16, 25]
+}
+````
+위의 예시에서는 숫자 배열의 각 요소를 제곱하여 새로운 배열을 생성하는 방법을 보여줍니다.<br>
+이 코드는 numbers 배열의 각 요소에 대해 제곱 연산을 수행하고, 그 결과를 squaredNumbers라는 새 배열에 저장합니다.<br>
+결과적으로, 각 숫자의 제곱값을 요소로 하는 새 배열이 출력됩니다.<br>
+
+<details>
+<summary>결과 확인하기</summary>
+<div>
+[1, 4, 9, 16, 25]
 
 #### 04. 💛.search()
 ✔ 사용방식: string.search(regexp)
