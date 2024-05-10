@@ -170,38 +170,29 @@ console.log(squaredNumbers); // 출력: [1, 4, 9, 16, 25]
 <summary>결과 확인하기</summary>
 <div>
 [1, 4, 9, 16, 25]
+</div>
 
-#### 04. 💛.search()
-✔ 사용방식: string.search(regexp)
-- 메서드는 문자열(정규식)을 검색하고, 위치값(숫자)을 반환합니다.
-- 일치하는 부분이 없으면 -1을 반환합니다.
-- 메서드는 문자열(정규식)을 검색하고, 위치값(숫자)을 반환합니다.
+#### 04. 💛includes()
+✔ 사용방식: const containsElement = 배열.includes(찾고자하는요소, 시작인덱스);<br>
+시작인덱스 : 검색을 시작할 인덱스입니다. 이 인자는 선택적이며, 기본값은 0입니다.<br>
+
+- 이 메서드는 배열 내에 특정 요소 또는 문자가 포함되어 있는지를 검색하여, 불린(true, false)을 반환합니다.
+- 배열에서는 특정 요소의 존재 여부를 확인할 때 사용하고, 문자열에서는 특정 문자열이 포함되어 있는지를 검사할 때 사용됩니다.
+- includes() 메서드는 간단하게 특정 값이나 문자열이 포함되어 있는지 여부를 확인할 때 유용하게 사용되며, 조건문에서 특히 자주 사용됩니다.
 
 ````javascript
 {
-// 01. 간단한 검색 예시: 
-let text = "Hello, world!";
-let index = text.search(/world/);
-console.log(index);  // 출력: 7
-
-// 02. 대소문자 구분 없이 검색 : 정규 표현식에 'i'플래그를 사용하면 대소문자를 구분하지 않고 검색할 수 있습니다.
-let text = "Hello, World!";
-let index = text.search(/world/i);
-console.log(index);  // 출력: 7
-
-
-//03. 글로벌 검색 플래그 g의 영향:
-// .search() 메소드는 g 플래그의 영향을 받지 않습니다. 정규 표현식에 g 플래그가 있어도 첫 번째 일치 항목의 인덱스만 반환합니다.
-let text = "Repeat, repeat, repeat";
-let index = text.search(/repeat/g);  // 'g' 플래그는 무시됨
-console.log(index);  // 출력: 8
+const fruits = ['apple', 'banana', 'mango'];
+const hasBanana = fruits.includes('banana');
+console.log(hasBanana); // 출력: true
 }
 ````
 
 <details>
 <summary>결과 확인하기</summary>
 <div>
-7 7 8
+true
+</div>
 
 #### 05. 💛💛.slice()
 ✔ 사용방법: arrayOrString.slice(start, end)<br>

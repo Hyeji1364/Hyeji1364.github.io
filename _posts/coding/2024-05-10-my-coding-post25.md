@@ -45,6 +45,7 @@ true<br>
 false<br>
 true<br>
 </div>
+<details>
 
 <br>
 

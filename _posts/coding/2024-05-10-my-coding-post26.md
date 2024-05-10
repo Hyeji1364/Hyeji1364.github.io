@@ -60,6 +60,7 @@ console.log(text.substring(12, 7));  // 출력: 'world'
 'world'<br>
 'world!'<br>
 'world'<br>
+</div>
 
 <br>
 
@@ -104,6 +105,7 @@ console.log(words);  // 출력: ['one', 'two']
 <summary>결과 확인하기</summary>
 <div>
 ['apple', 'banana', 'cherry'] ['apple', 'banana', 'cherry'] ['one', 'two']
+</div>
 
 #### 03. 💛 trim()
 ✔ 사용방법: 문자열.trim()
@@ -127,6 +129,7 @@ console.log(trimmedInput);  // 출력: "Hello, World!"
 <summary>결과 확인하기</summary>
 <div>
 Hello, World!
+</div>
 
 
 
@@ -176,6 +179,7 @@ console.log(newText);  // 출력: "Smith, John"
 "Hello, everyone!"<br>
 "Do, do, do"<br>
 "Smith, John"<br>
+</div>
 
 #### 04. 💛.search()
 ✔ 사용방식: string.search(regexp)
@@ -208,6 +212,7 @@ console.log(index);  // 출력: 8
 <summary>결과 확인하기</summary>
 <div>
 7 7 8
+</div>
 
 #### 05. 💛💛.slice()
 ✔ 사용방법: arrayOrString.slice(start, end)<br>
@@ -247,6 +252,4 @@ console.log(numbers.slice(-3));    // 출력: [3, 4, 5]
 'world!'<br>
 '[2, 3]'<br>
 '[3, 4, 5]'<br>
-
-<br>
-자바스크립트
+</div>
