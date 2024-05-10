@@ -68,6 +68,8 @@ console.log(firstLargeNumber); // 출력: 12
 <div>
 { id: 1, name: 'Keyboard', price: 29.99 }<br>
 12<br>
+</div>
+</details>
 
 <br>
 
@@ -102,6 +104,8 @@ Index 1: 2<br>
 Index 2: 3<br>
 Index 3: 4<br>
 Index 4: 5<br>
+</div>
+</details>
 
 #### 03. 💛filter()
 ✔ 사용방법: const newArray = 배열.filter(function(element, index, array) { <br>
@@ -137,7 +141,8 @@ console.log(evenNumbers); // 출력: [2, 4, 6]
 <summary>결과 확인하기</summary>
 <div>
 [2, 4, 6]
-
+</div>
+</details>
 
 
 #### 04. 💛💛💛map()
@@ -171,6 +176,7 @@ console.log(squaredNumbers); // 출력: [1, 4, 9, 16, 25]
 <div>
 [1, 4, 9, 16, 25]
 </div>
+</details>
 
 #### 04. 💛includes()
 ✔ 사용방식: const containsElement = 배열.includes(찾고자하는요소, 시작인덱스);<br>

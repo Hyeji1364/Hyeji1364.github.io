@@ -187,7 +187,7 @@ console.log(newText);  // 출력: "Smith, John"
 </div>
 </details>
 
-#### 04. 💛.search()
+#### 05. 💛.search()
 ✔ 사용방식: string.search(regexp)
 - 메서드는 문자열(정규식)을 검색하고, 위치값(숫자)을 반환합니다.
 - 일치하는 부분이 없으면 -1을 반환합니다.
