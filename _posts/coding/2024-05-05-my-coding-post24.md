@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jquery를 이용한 이미지 슬라이드
-date: 2024-05-09 23:00 +0900
+date: 2024-05-05 23:00 +0900
 description: 이미지슬라이드
 image: ../assets/img/webd.webp
 category: 웹디자인기능사

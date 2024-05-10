@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Javascript 메서드 정리(2) - 문자열객체
-date: 2024-05-10 09:30 +0900
+date: 2024-05-09 09:30 +0900
 description: 자바스크립트 메서드 
 image: ../assets/img/Javascript.jpg
 category: Javascript

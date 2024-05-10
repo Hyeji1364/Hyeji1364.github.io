@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Box Model
-date: 2024-05-09 20:00 +0900
+date: 2024-05-02 20:00 +0900
 description: Box Model에 대해 알아보기!
 image: ../assets/img/blogcss.gif
 category: CSS

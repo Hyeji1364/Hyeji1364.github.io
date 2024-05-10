@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GSAP 효과주기
-date: 2024-05-09 21:00 +0900
+date: 2024-05-03 21:00 +0900
 description: GSAP Parallax 효과주기
 image: ../assets/img/gsap.png
 category: GSAP

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP
-date: 2024-05-09 22:00 +0900
+date: 2024-05-04 22:00 +0900
 description: PHP 연동하기
 image: ../assets/img/php.gif
 category: PHP
