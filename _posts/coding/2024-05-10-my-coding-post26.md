@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript 메서드 정리 (1) - 문자열 객체
+title: Javascript 메서드 정리(2) - 문자열객체
 date: 2024-05-10 23:00 +0900
 description: 자바스크립트 메서드 
 image: ../assets/img/Javascript.jpg
@@ -12,123 +12,121 @@ sitemap: true
 
 ## Javascript
 
-### Javascript 메서드 정리
-오늘은 자바스크립트 메서드에 대해 정리하는 시간을 가져보겠습니다.<br>
-중요도에 따라 하트의 갯수가 1개부터 3개까지 정리하겠습니다.<br>
+### Javascript 메서드 정리(2)
+자바스크립트 메서드에 대해 두번째 정리입니다. <br>
+중요도에 따라 하트의 갯수가 1개부터 3개까지 입력됩니다.<br>
 
 <hr>
 
-### 01.💛.includes()
+### 01.💛substring()
 
-✔ 사용방법 : string.includes(searchString, position)
+✔ 사용방법 : string.substring(indexStart, indexEnd)<br>
 
-- searchString: 문자열에서 찾고자 하는 부분 문자열입니다.<br>
-- position (선택적): 검색을 시작할 위치를 지정합니다. 기본값은 0입니다.<br>
-- 메서드는 문자열 포함 여부를 검색하여, 불린(true, false)을 반환합니다.<br>
-- 대소문자를 구별합니다.<br>
-- 문자열이 포함되어 있으면 'true'를 그렇지 않으면 'false'를 반환합니다.<br>
-- 검색하려는 요소를 첫번째 매개변수로 지정하고, 검색을 시작할 위치를 두 번째 매개변수로 선택적으로 지정할 수 있습니다.<br>
+📍indexStart: 추출을 시작할 인덱스입니다. <br>
+📍indexEnd (선택적): 추출을 종료할 인덱스입니다. <br>
+이 인덱스는 결과에 포함되지 않습니다. 이 매개변수를 생략하면 문자열의 끝까지 추출합니다.<br>
+
+- 메서드는 문자열에서 시작 위치에서 종료 위치 값을 추출하여, 새로운 문자열을 반환합니다.
+1. 인덱스 순서: 'indexStart'가 'indexEnd'보다 크면 .substring()은 두 인덱스를 자동으로 스왑합니다.
+예를 들어, substring(10, 5)는 substring(5, 10)으로 처리됩니다.
+2.음수 인덱스: .substring()은 음수 인덱스를 처리하지 않습니다. 음수 값은 자동으로 0으로 취급됩니다.
+- 반환 값 : 지정된 부분 문자열을 반환합니다.
+- 인덱스 값이 혼동될 경우 자동으로 조정해주는 특성이 있어 편합니다.
 
 ````javascript
 {
+// 01. 기본 사용 예시:
 let text = "Hello, world!";
-console.log(text.includes("world"));  // 출력: true
-console.log(text.includes("hello"));  // 출력: false (대소문자 구분)
-console.log(text.includes("o", 5));   // 출력: true (인덱스 5부터 'o' 검색)
+console.log(text.substring(7, 12));  // 출력: 'world'
+console.log(text.substring(7));     // 출력: 'world!'
+
+// 02. 인덱스 스왑 예시:
+let text = "Hello, world!";
+console.log(text.substring(12, 7));  // 출력: 'world'
 }
 ````
+✅ 부연 설명<br>
+1. 기본 사용 예시:
+첫 번째 예에서는 인덱스 7부터 12까지의 문자열 "world"를 반환합니다.<br>
+두 번째 예에서는 인덱스 7부터 문자열의 끝까지 "world!"를 반환합니다.<br>
+
+2. 인덱스 스왑 예시:
+이 예에서 .substring() 메소드는 indexStart와 indexEnd의 순서를 스왑하여 "world"를 정상적으로 추출합니다.<br>
+
 
 <details>
 <summary>결과 확인하기</summary>
 <div>
-true<br>
-false<br>
-true<br>
+'world'<br>
+'world!'<br>
+'world'<br>
 
 <br>
 
-#### 02. 💛.indexOf()
-✔ 사용방법: string.indexOf(searchValue, fromIndex)
+#### 02. 💛💛💛split()
+✔ 사용방법: string.split(separator, limit)
 
-- searchValue: 찾고자 하는 문자열입니다.
-- fromIndex (선택적): 검색을 시작할 위치입니다. 이 매개변수를 생략하면 기본값은 0입니다.
-- 요소가 존재하지 않으면 '-1'을 반환합니다.
-- 대소문자를 구분하며, 정확한 일치를 찾습니다.
-- 배열에서는 특정 요소의 위치를, 문자열에서는 부분 문자열의 시작
-- 위치를 알아내는데 유용하게 사용할 수 있습니다.
+📍separator: 문자열을 나눌 기준이 되는 구분자입니다.<br>
+이 값은 문자열 또는 정규 표현식일 수 있습니다. 구분자를 생략하거나 빈 문자열을 전달하면 전체 문자열이 하나의 요소로 포함된 배열이 반환됩니다.
+<br>
+📍 limit (선택적): 반환될 배열의 최대 요소 수를 지정합니다. 이 값이 설정되면, 결과 배열은 최대 limit 개의 요소를 포함하게 됩니다.<br>
+반환 값 : 구분자로 나누어진 문자열의 배열을 반환합니다.
+<br>
 
-````javascript
-{
-let text = "Hello, world!";
-console.log(text.indexOf("world"));   // 출력: 7
-console.log(text.indexOf("Hello"));   // 출력: 0
-console.log(text.indexOf("o"));       // 출력: 4
-console.log(text.indexOf("z"));       // 출력: -1 (존재하지 않는 경우)
-console.log(text.indexOf("o", 5));    // 출력: 8 (인덱스 5 이후의 'o' 위치)
-}
-````
-
-<details>
-<summary>결과 확인하기</summary>
-<div>
-7<br>
-0<br>
-4<br>
--1<br>
-8<br>
-
-#### 03. 💛match()
-✔ 사용방법: string.match(regexp)
-- 지정한 숫자(index)를 받아, 문자열에서 해당되는 인덱스의 요소를 반환합니다.
-- 'regexp':일치를 찾기 위해 사용할 정규 표현식입니다.
-- 일치하는 결과가 없으면 'null'을 반환합니다.
-- 일치하는 결과가 있으면, 결과 배열을 반환합니다.
-- 배열의 각 요소는 일치하는 문자열을 나타냅니다.
-- 여기서 주어진 문자열은 "javascript reference"이며, at() 함수에 인덱스를 전달하여 해당 인덱스에 해당하는 문자를 반환합니다.
-- 'index'는 일치가 발견된 시작위치이며, 'input'은 원본 문자열을 포함합니다.
+- 메서드는 문자열을 구분자로 구분하고, 여러 개의 문자열(배열)을 반환합니다.
+- 문자열을 배열로 분리하는데 사용됩니다.
+- 구분자는 생략할 수 있습니다.
 
 ````javascript
 {
 // 01. 기본 사용 예시
-let text = "The quick brown fox jumps over the lazy dog.";
-let regex = /quick/;
-console.log(text.match(regex));
-// 출력: ['quick', index: 4, input: 'The quick brown fox jumps over the lazy dog.', groups: undefined]
+// 이 예에서는 ", "를 구분자로 사용하여 문자열을 세 부분으로 나누고, 각 부분이 배열의 요소가 됩니다.
+let text = "apple, banana, cherry";
+let fruits = text.split(", ");
+console.log(fruits);  // 출력: ['apple', 'banana', 'cherry']
 
-// 02. 글로벌 검색 : 정규 표현식에 'g'플래그(글로벌검색)를 사용하면 문자열 전체에서 모든 일치 항목을 찾아 배열로 반환합니다.
-let text = "Repeat repeat repeat";
-let regex = /repeat/gi;     // 'g'는 글로벌 검색, 'i'는 대소문자 구분 없이 검색
-console.log(text.match(regex));
-// 출력: ["Repeat", "repeat", "repeat"]
+// 02. 정규 표현식 사용 예시
+// 여기서는 공백 문자(\s+)를 기준으로 문자열을 나누었습니다.
+// 정규 표현식 /s+는 하나 이상의 공백을 의미합니다.
+et text = "apple banana cherry";
+let fruits = text.split(/\s+/);
+console.log(fruits);  // 출력: ['apple', 'banana', 'cherry']
 
-// 03.캡처 그룹:
-괄호를 사용해 캡처 그룹을 정의하면, 그룹별로 일치하는 부분을 배열 내부에서 별도로 접근할 수 있습니다.
-let text = "John: 34, Sarah: 32";
-let regex = /(\w+): (\d+)/g;        //'(\w+)'는 문자열을, '(\d+)'는 숫자를 각각 캡처
-let matches;
-while ((matches = regex.exec(text)) !== null) {
-  console.log(`${matches[1]} is ${matches[2]} years old.`);
-}
-// 출력: "John is 34 years old."
-// 출력: "Sarah is 32 years old."
+// 03. Limit 매개변수 사용 예시
+// 이 예에서는 공백을 구분자로 사용하고, limit을 2로 설정하여 최대 두 개의 요소만 포함하는 배열을 생성합니다.
+let text = "one two three four";
+let words = text.split(" ", 2);
+console.log(words);  // 출력: ['one', 'two']
 }
 ````
+
 <details>
 <summary>결과 확인하기</summary>
 <div>
-['quick', index: 4, input: 'The quick brown fox jumps over the lazy dog.', groups: undefined] <br>
-["Repeat", "repeat", "repeat"]<br>
-"John is 34 years old."<br>
-"Sarah is 32 years old."<br>
+['apple', 'banana', 'cherry'] ['apple', 'banana', 'cherry'] ['one', 'two']
 
-✅ 부연 설명<br>
-02. 글로벌검색 <br>
-이 예시에서는 "repeat"라는 단어를 대소문자 구분 없이 (i 플래그 덕분에) 전체 텍스트에서 모두 찾아내어 결과 배열에 저장합니다.<br>
-각각의 일치하는 부분이 배열의 요소로 반환됩니다.<br>
+#### 03. 💛 trim()
+✔ 사용방법: 문자열.trim()
+- 문자열 앞과 뒤에 있는공백이 제거된 새 문자열을 반환합니다.
+- 메서드는 문자열의 앞/뒤 공백을 제거하고, 새로운 문자열을 반환합니다.
+- 여기서 말하는 '공백'에는 스페이스, 탭, 줄바꿈 등이 포함됩니다.
+- 이 메소드는 문자열 가운데 있는 공백은 건드리지 않고, 앞과 뒤의 공백만 제거합니다.
+- .trim()은 데이터를 정리하거나, 불필요한 공백 때문에 발생할 수 있는 오류를 방지하는 데 유용하게 사용됩니다.
+- 이 메소드는 원본 문자열을 변경하지 않고, 새로운 정리된 문자열을 반환합니다.
 
-03. 캡쳐 그룹<br>
-이 예시에서 (\w+)는 이름(문자열)을, (\d+)는 나이(숫자)를 각각 캡처합니다.<br>
-regex.exec(text)를 사용하여 반복적으로 일치하는 정보를 찾고, matches 배열에서 matches[1]과 matches[2]로 각각 이름과 나이를 추출하여 출력합니다.<br>
+
+````javascript
+{
+let userInput = "   Hello, World!   ";
+let trimmedInput = userInput.trim();
+console.log(trimmedInput);  // 출력: "Hello, World!"
+}
+````
+
+<details>
+<summary>결과 확인하기</summary>
+<div>
+Hello, World!
 
 
 
@@ -249,3 +247,6 @@ console.log(numbers.slice(-3));    // 출력: [3, 4, 5]
 'world!'<br>
 '[2, 3]'<br>
 '[3, 4, 5]'<br>
+
+<br>
+자바스크립트
