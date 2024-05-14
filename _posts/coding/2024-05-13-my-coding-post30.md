@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IR효과
+title: 반응형 웹디자인
 date: 2024-05-13 10:00 +0900
 description: 반응형
 image: ../assets/img/blogcss.gif
