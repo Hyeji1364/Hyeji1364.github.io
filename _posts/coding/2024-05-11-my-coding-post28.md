@@ -3,7 +3,7 @@ layout: post
 title: 웹 표준, 웹 접근성
 date: 2024-05-11 10:00 +0900
 description: 웹표준과 웹접근성
-image: ../assets/img/bloghtml.gif
+image: ../assets/img/blogcss.gif
 category: HTML
 tags: HTML CSS
 published: true
