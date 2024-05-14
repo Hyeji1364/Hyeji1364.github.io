@@ -1,11 +1,11 @@
 ---
 layout: post
-title: IR효과
+title: 스프라이트 효과
 date: 2024-05-12 10:00 +0900
-description: IR효과
-image: ../assets/img/bloghtml.gif
-category: IR효과
-tags: IR효과
+description: 스프라이트 효과
+image: ../assets/img/blogcss.gif
+category: CSS
+tags: 
 published: true
 sitemap: true
 ---

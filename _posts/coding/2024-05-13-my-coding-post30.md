@@ -3,8 +3,8 @@ layout: post
 title: IR효과
 date: 2024-05-13 10:00 +0900
 description: 반응형
-image: ../assets/img/bloghtml.gif
-category: 반응형
+image: ../assets/img/blogcss.gif
+category: CSS
 tags: 반응형 HTML CSS
 published: true
 sitemap: true
