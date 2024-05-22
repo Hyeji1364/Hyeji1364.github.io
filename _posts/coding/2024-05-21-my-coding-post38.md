@@ -3,8 +3,8 @@ layout: post
 title: 리액트 훅(React hook)
 date: 2024-05-21 10:00 +0900
 description: 리액트 훅
-image: ../assets/img/blogcss.gif
-category: coding
+image: ../assets/img/react.png
+category: react
 tags: React
 published: true
 sitemap: true
