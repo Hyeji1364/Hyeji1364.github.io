@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 반응형 웹디자인
+title: 리액트 훅(React hook)
 date: 2024-05-21 10:00 +0900
 description: 리액트 훅
 image: ../assets/img/blogcss.gif
