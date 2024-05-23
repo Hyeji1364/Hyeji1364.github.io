@@ -3,7 +3,7 @@ layout: post
 title: Javascript 메서드 정리 (1) - 문자열 객체
 date: 2024-05-06 09:10 +0900
 description: 자바스크립트 메서드 
-image: <img width="810" alt="Javascript문자열객체" src="https://github.com/Hyeji1364/Hyeji1364.github.io/assets/161557112/232348a3-88fa-4fe0-9137-4683b40bf600">
+image: ../assets/img/Javascript문자열객체.png
 category: Javascript
 tags: Javascript
 published: true
