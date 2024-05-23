@@ -3,7 +3,7 @@ layout: post
 title: Javascript 메서드 정리(3) - 배열 객체
 date: 2024-05-10 10:00 +0900
 description: 자바스크립트 메서드 
-image: ../assets/img/Javascript.jpg
+image: <img width="810" alt="Javscript배열객체" src="https://github.com/Hyeji1364/Hyeji1364.github.io/assets/161557112/cd8affc2-dd1d-4002-97c6-0c61cf3072c2">
 category: Javascript
 tags: Javascript
 published: true

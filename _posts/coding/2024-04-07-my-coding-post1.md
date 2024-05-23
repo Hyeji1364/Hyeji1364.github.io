@@ -3,7 +3,7 @@ layout: post
 title: 자바스크립트 연산자
 date: 2024-04-08 02:13 +0900
 description: 
-image: ../assets/img/Javascript.jpg
+image: ../assets/img/javascirpt.png
 category: Javascript
 tags: js Javascript
 published: true
