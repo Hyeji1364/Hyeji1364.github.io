@@ -1,7 +1,7 @@
 ---
 layout: post
 title: data 속성
-date: 2024-05-15 10:00 +0900
+date: 2024-05-16 10:00 +0900
 description: data 속성
 image: ../assets/img/data.png
 category: HTML
