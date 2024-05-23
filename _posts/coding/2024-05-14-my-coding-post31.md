@@ -1,98 +1,117 @@
 ---
 layout: post
-title: 반응형 웹디자인
-date: 2024-05-13 10:00 +0900
-description: 반응형
-image: ../assets/img/blogcss.gif
-category: CSS
-tags: 반응형 HTML CSS
+title: 시멘틱 태그
+date: 2024-05-14 10:00 +0900
+description: 시멘틱 태그
+image: ../assets/img/tag.png
+category: coding
+tags: HTML CSS 시멘틱태그
 published: true
 sitemap: true
 ---
 
-## 반응형
-오늘은 반응형 웹디자인에 대해 알아보겠습니다.
+## 시멘틱 태그
+오늘은 HTML의 시멘틱 태그에 대해 알아보겠습니다.
 
-### 반응형 웹디자인
 
-반응형 웹 디자인(Responsive Web Design)은 다양한 기기와 화면 크기에 맞춰 웹사이트의 레이아웃과 콘텐츠를 조정하는 접근 방식입니다.<br>
-이를 통해 사용자 경험을 최적화하고, 다양한 디바이스(데스크톱, 태블릿, 스마트폰 등)에서 일관된 사용자 경험을 제공합니다.<br>
-반응형 웹 디자인을 구현하는 주요 요소와 기술은 다음과 같습니다.<br>
+HTML의 `시멘틱 태그`(semantic tag)는 문서의 구조와 의미를 명확히 하기 위해 사용되는 HTML 태그입니다.<br>
+시멘틱 태그는 콘텐츠의 의미를 정의하며, 검색 엔진과 브라우저, 그리고 다른 사용자에게 콘텐츠의 목적을 더 잘 이해할 수 있도록 돕습니다.<br>
+시멘틱 태그를 사용하면 접근성 향상, SEO 개선, 코드 유지보수성 향상 등의 이점을 얻을 수 있습니다.<br>
 
-### 반응형 웹 디자인을 위한 주요 요소와 기술
+💡 여기서 SEO(Search Engine Optimization, 검색 엔진 최적화)는 웹사이트나 웹페이지를 검색 엔진의 검색 결과에서 더 높은 순위에 노출시키기 위한 다양한 전략과 기법을 의미합니다.<br>
+SEO의 궁극적인 목표는 검색 엔진을 통해 웹사이트에 더 많은 트래픽을 유도하고, 이를 통해 비즈니스 목표를 달성하는 것입니다.<br>
 
-#### 01.미디어 쿼리(Media Queries):
-CSS3의 기능으로, 특정 조건에 따라 스타일을 적용할 수 있습니다.<br>
-화면 크기, 해상도, 방향(가로/세로) 등을 기준으로 스타일을 다르게 설정할 수 있습니다.<br>
-예시<br>
+### 주요 시멘틱 태그와 그 역할
 
-````css
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
+#### 01. header
+- 문서나 섹션의 머리글 부분을 정의합니다.
+- 일반적으로 로고, 네비게이션, 제목 등을 포함합니다.
+
+````html
+<header>
+  <h1>My Website</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 ````
 
-#### 02.유연한 그리드 레이아웃(Flexible Grid Layouts):
-픽셀 대신 상대적인 단위(%, em, rem, vw, vh 등)를 사용하여 레이아웃을 구성합니다.<br>
-이를 통해 다양한 화면 크기에 맞춰 자동으로 조정됩니다.<br>
-예시<br>
+#### 02.nav
+- 네비게이션 링크를 정의합니다.
+- 사이트나 페이지의 주요 링크를 그룹화합니다.
 
-````css
-.container {
-  width: 100%;
-  padding: 1rem;
-}
-
-.item {
-  width: 50%;
-  padding: 0.5rem;
-}
+````html
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 ````
-#### 03. 유연한 이미지(Flexible Images):
-이미지 크기를 상대적으로 설정하여 다양한 화면 크기에 맞게 조정합니다.
+#### 03. main
+- 문서의 주요 콘텐츠를 정의합니다.
+- 문서에서 주요 부분을 감싸는 태그로, 페이지의 유일한 주요 콘텐츠를 포함합니다.
 
-예시<br>
-
-````css
-img {
-  max-width: 100%;
-  height: auto;
-}
+````html
+<main>
+  <h2>Welcome to My Website</h2>
+  <p>This is the main content of the page.</p>
+</main>
 ````
 
-#### 04.뷰포트 메타 태그(Viewport Meta Tag):
-HTML의 <meta> 태그를 사용하여 뷰포트 설정을 지정합니다. 이를 통해 모바일 디바이스에서 페이지가 제대로 표시되도록 합니다.<br>
+#### 04.section
+- 문서의 독립적인 섹션을 정의합니다.
+- 주제별로 그룹화된 콘텐츠를 포함합니다.
 
 ````html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ````
+#### 05. article
+- 독립적인 콘텐츠를 정의합니다.
+- 블로그 글, 뉴스 기사, 포럼 게시물 등 독립적으로 배포 가능한 콘텐츠를 포함합니다.
 
-#### 05. 플렉스박스(Flexbox):
-CSS3의 레이아웃 모델로, 컨테이너와 그 안의 아이템들을 쉽게 정렬하고 배치할 수 있습니다. 반응형 디자인에 유용합니다.<br>
-````css
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.item {
-  flex: 1 1 200px;
-  margin: 0.5rem;
-}
+````html
+<article>
+  <h2>Breaking News</h2>
+  <p>Today's breaking news is...</p>
+</article>
 ````
-#### 06. CSS 그리드(CSS Grid):
-CSS의 강력한 레이아웃 시스템으로, 복잡한 그리드 레이아웃을 쉽게 구현할 수 있습니다.<br>
-````css
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
+#### 06. aside
+- 본문과 간접적으로 관련된 콘텐츠를 정의합니다.
+- 사이드바, 광고, 관련 링크 등을 포함합니다.
 
-.grid-item {
-  background-color: #ccc;
-  padding: 1rem;
-}
+````html
+<aside>
+  <h3>Related Articles</h3>
+  <ul>
+    <li><a href="#article1">Article 1</a></li>
+    <li><a href="#article2">Article 2</a></li>
+  </ul>
+</aside>
 ````
+#### 07. footer
+- 문서나 섹션의 바닥글 부분을 정의합니다.
+- 저작권 정보, 연락처, 사이트 맵 등을 포함합니다.
+
+````html
+<footer>
+  <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+````
+
+#### 08. figure 및 figcaption
+- 이미지나 다이어그램 등의 자율적인 콘텐츠를 정의하며, 그에 대한 설명을 포함합니다.
+
+````html
+<figure>
+  <img src="image.jpg" alt="A description of the image">
+  <figcaption>Image description</figcaption>
+</figure>
+````
+
+시멘틱 태그를 올바르게 사용하면 웹 페이지가 더 구조적이고 의미 있게 되어 다양한 사용자와 기계가 콘텐츠를 더 효과적으로 활용할 수 있습니다.
