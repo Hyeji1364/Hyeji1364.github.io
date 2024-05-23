@@ -37,7 +37,7 @@ CSS에서 block, inline-block, inline 디스플레이 속성은 요소가 문서
 - 용도: 텍스트 내에서 스타일을 적용하거나 작은 영역을 강조하는 데 사용됩니다.
 
 ````html
-<p>This is an <span style="color: red;">inline</span> element.</p>
+This is an <span style="color: red;">inline</span> element.
 ````
 위의 예제에서 span 요소는 텍스트와 같은 줄에 배치되며, 텍스트의 크기만큼만 공간을 차지합니다.
 
