@@ -28,7 +28,7 @@ CSS에서 block, inline-block, inline 디스플레이 속성은 요소가 문서
 <div style="border: 1px solid black;">Block Element 2</div>
 ````
 
-위의 예제에서 각 div 요소는 새로운 줄에서 시작하며, 가능한 최대 너비를 차지합니다.
+위의 예시에서 각 div 요소는 새로운 줄에서 시작하며, 가능한 최대 너비를 차지합니다.
 
 02. inline 요소
 - 특성: inline 요소는 콘텐츠의 크기만큼 너비를 차지하며, 다른 요소와 같은 줄에 배치됩니다.<br>
@@ -36,10 +36,6 @@ CSS에서 block, inline-block, inline 디스플레이 속성은 요소가 문서
 - 예: `span`, `a`, `strong` 등이 대표적인 인라인 요소입니다.
 - 용도: 텍스트 내에서 스타일을 적용하거나 작은 영역을 강조하는 데 사용됩니다.
 
-````html
-This is an <span style="color: red;">inline</span> element.
-````
-위의 예제에서 span 요소는 텍스트와 같은 줄에 배치되며, 텍스트의 크기만큼만 공간을 차지합니다.
 
 02. inline-block 요소
 - 특성: inline-block 요소는 inline 요소처럼 같은 줄에 배치되지만, block 요소처럼 너비와 높이를 지정할 수 있습니다.<br>
@@ -63,4 +59,3 @@ This is an <span style="color: red;">inline</span> element.
 - 예: `display: inline-block;`으로 설정한 요소
 
 이러한 속성을 적절히 사용하면 웹 페이지의 레이아웃을 효과적으로 관리하고, 원하는 디자인을 구현할 수 있습니다.
-html과 CSS를 사용할 때 많이 사용하는 속성이므로, 알아두면 좋을 것 같습니다 !! 😉
