@@ -4,7 +4,7 @@ title: 시멘틱 태그
 date: 2024-05-14 10:00 +0900
 description: 시멘틱 태그
 image: ../assets/img/tag.png
-category: coding
+category: CSS
 tags: HTML CSS 시멘틱태그
 published: true
 sitemap: true

@@ -4,13 +4,14 @@ title: block, inline-block, inline 차이
 date: 2024-05-15 10:00 +0900
 description: block, inline-block, inline 차이
 image: ../assets/img/inline.png
-category: coding
+category: CSS
 tags: CSS block inline-block inline
 published: true
 sitemap: true
 ---
 
 ## block, inline-block, inline 차이
+
 오늘은 CSS에서 block, inline-block, inline 차이에 대해 알아보겠습니다.
 <br>
 CSS에서 block, inline-block, inline 디스플레이 속성은 요소가 문서 내에서 어떻게 배치되고 다른 요소와 상호작용하는지를 결정합니다.<br>
@@ -47,10 +48,6 @@ CSS에서 block, inline-block, inline 디스플레이 속성은 요소가 문서
 - 용도: 인라인 레이아웃에서 블록 수준의 제어가 필요한 경우 사용됩니다.<br>
 예를 들어, 네비게이션 메뉴나 버튼 등을 만들 때 유용합니다.
 
-````html
-<div style="display: inline-block; width: 100px; height: 50px; border: 1px solid black;">Inline-Block 1</div>
-<div style="display: inline-block; width: 100px; height: 50px; border: 1px solid black;">Inline-Block 2</div>
-````
 
 ✨ 정리
 #### block 요소:

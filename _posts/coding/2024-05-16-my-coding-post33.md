@@ -1,11 +1,11 @@
 ---
 layout: post
-title: block, inline-block, inline 차이
+title: data 속성
 date: 2024-05-15 10:00 +0900
-description: block, inline-block, inline 차이
-image: ../assets/img/inline.png
-category: coding
-tags: CSS block inline-block inline
+description: data 속성
+image: ../assets/img/data.png
+category: HTML
+tags: data 속성
 published: true
 sitemap: true
 ---
