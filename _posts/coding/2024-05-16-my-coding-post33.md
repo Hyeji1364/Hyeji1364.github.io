@@ -18,55 +18,7 @@ HTML5에서 도입된 data-* 속성은 개발자가 사용자 정의 데이터�
 이 속성은 data-로 시작하고 그 뒤에 사용자 정의 이름이 오는 형태를 가지며, 자바스크립트와 CSS를 통해 쉽게 접근할 수 있습니다.<br>
 이는 특히 동적인 웹 애플리케이션에서 유용하게 사용됩니다.
 
-01.  block 요소
-- 특성: block 요소는 항상 새로운 줄에서 시작하며, 가능한 최대 너비(부모 요소의 너비)를 차지합니다. <br>
-너비와 높이를 지정할 수 있으며, 마진과 패딩을 적용할 수 있습니다.
-- 예: <div>, <h1>, <p> 등이 대표적인 블록 요소입니다.
-- 용도: 문단, 섹션, 블록 수준의 레이아웃에 사용됩니다.
+### HTML의 data-* 속성
+HTML 코드에서 data-* 속성을 사용하여 사용자 정의 데이터를 저장할 수 있습니다.
 
-````html
-<div style="border: 1px solid black;">Block Element 1</div>
-<div style="border: 1px solid black;">Block Element 2</div>
-````
-
-위의 예제에서 각 div 요소는 새로운 줄에서 시작하며, 가능한 최대 너비를 차지합니다.
-
-02. inline 요소
-- 특성: inline 요소는 콘텐츠의 크기만큼 너비를 차지하며, 다른 요소와 같은 줄에 배치됩니다.<br>
-너비와 높이를 지정할 수 없으며, 수평 및 수직 마진과 패딩만 일부 적용됩니다.
-너비와 높이를 지정할 수 있으며, 마진과 패딩을 적용할 수 있습니다.
-- 예: <span>, <a>, <strong> 등이 대표적인 인라인 요소입니다.
-- 용도: 텍스트 내에서 스타일을 적용하거나 작은 영역을 강조하는 데 사용됩니다.
-
-````html
-<p>This is an <span style="color: red;">inline</span> element.</p>
-````
-위의 예제에서 span 요소는 텍스트와 같은 줄에 배치되며, 텍스트의 크기만큼만 공간을 차지합니다.
-
-02. inline-block 요소
-- 특성: inline-block 요소는 inline 요소처럼 같은 줄에 배치되지만, block 요소처럼 너비와 높이를 지정할 수 있습니다.<br>
-마진과 패딩도 완전히 적용됩니다.
-- 예: 디폴트로는 없지만, display: inline-block;을 적용하여 생성할 수 있습니다.
-- 용도: 인라인 레이아웃에서 블록 수준의 제어가 필요한 경우 사용됩니다.<br>
-예를 들어, 네비게이션 메뉴나 버튼 등을 만들 때 유용합니다.
-
-````html
-<div style="display: inline-block; width: 100px; height: 50px; border: 1px solid black;">Inline-Block 1</div>
-<div style="display: inline-block; width: 100px; height: 50px; border: 1px solid black;">Inline-Block 2</div>
-````
-
-✨ 정리
-#### block 요소:
-- 새로운 줄에서 시작하고, 가능한 최대 너비를 차지함.
-- 예: <div>, <h1>, <p>
-
-#### inline 요소:
-- 같은 줄에 배치되고, 콘텐츠의 크기만큼 너비를 차지함.
-- 예: <span>, <a>, <strong>
-
-#### inline-block 요소:
-- 같은 줄에 배치되지만, 너비와 높이를 지정할 수 있음.
-- 예: display: inline-block;으로 설정한 요소
-
-이러한 속성을 적절히 사용하면 웹 페이지의 레이아웃을 효과적으로 관리하고, 원하는 디자인을 구현할 수 있습니다.
-html과 CSS를 사용할 때 많이 사용하는 속성이므로, 알아두면 좋을 것 같습니다 !! 😉
+🔍 사용예시
