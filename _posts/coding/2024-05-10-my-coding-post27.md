@@ -3,7 +3,7 @@ layout: post
 title: Javascript 메서드 정리(3) - 배열 객체
 date: 2024-05-10 10:00 +0900
 description: 자바스크립트 메서드 
-image: ../assets/img/javscript02.png
+image: ../assets/img/javascript02.png
 category: Javascript
 tags: Javascript
 published: true
