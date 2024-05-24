@@ -5,7 +5,7 @@ date: 2024-05-17 10:00 +0900
 description: 크로스 브라우징
 image: ../assets/img/cross.png
 category: HTML
-tags: Cross-Browsing
+tags: CrossBrowsing
 published: true
 sitemap: true
 ---
