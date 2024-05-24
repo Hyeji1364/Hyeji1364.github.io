@@ -1,8 +1,8 @@
 ---
 layout: post
-title: JAVASCRIPT 장단점
+title: javascript 장단점
 date: 2024-05-18 10:00 +0900
-description: JAVASCRIPT 장단점
+description: javascript 장점과 단점
 image: ../assets/img/javascript03.png
 category: Javascript
 tags: Javascript
