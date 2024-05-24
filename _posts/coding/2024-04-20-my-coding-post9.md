@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 메뉴유형
-date: 2024-04-19 04:30 +0900
+date: 2024-04-20 04:30 +0900
 description: 
 image: ../assets/img/webd.webp
 category: 웹디자인기능사

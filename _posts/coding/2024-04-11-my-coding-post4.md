@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS 문단 관련 스타일
-date: 2024-04-10 09:42 +0900
+date: 2024-04-11 09:42 +0900
 description: 
 image: ../assets/img/cssgif.gif
 category: CSS
