@@ -2,10 +2,10 @@
 layout: post
 title: seo 최적화
 date: 2024-05-19 10:00 +0900
-description: JAVASCRIPT 장단점
+description: seo 최적화
 image: ../assets/img/seo.png
 category: HTML
-tags: Javascript
+tags: seo 최적화
 published: true
 sitemap: true
 ---
