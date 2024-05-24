@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS - position
-date: 2024-04-21 18:40 +0900
+date: 2024-04-22 18:40 +0900
 description: 
 image: ../assets/img/blogcss.gif
 category: CSS

@@ -29,6 +29,7 @@ HTML 코드에서 data-* 속성을 사용하여 사용자 정의 데이터를 �
   Product Information
 </div>
 ````
+
 위의 예제에서 div 요소는 data-id, data-name, data-price 속성을 가지고 있으며, 각각의 값은 "12345", "Widget", "19.99"입니다.
 
 ### 자바스크립트를 통한 접근
