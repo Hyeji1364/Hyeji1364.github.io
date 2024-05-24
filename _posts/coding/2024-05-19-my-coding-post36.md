@@ -1,11 +1,11 @@
 ---
 layout: post
-title: JAVASCRIPT 장단점
+title: seo 최적화
 date: 2024-05-19 10:00 +0900
 description: JAVASCRIPT 장단점
-image: ../assets/img/javascript03.png
-category: JAVASCRIPT
-tags: JAVASCRIPT
+image: ../assets/img/seo.png
+category: HTML
+tags: Javascript
 published: true
 sitemap: true
 ---
