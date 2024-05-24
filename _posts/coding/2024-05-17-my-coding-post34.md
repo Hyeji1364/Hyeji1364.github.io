@@ -49,6 +49,7 @@ sitemap: true
 02. 리셋 CSS (Reset CSS)
 - 브라우저 기본 스타일을 초기화하여 모든 브라우저에서 일관된 스타일을 적용합니다.
 - 예: Normalize.css 사용
+
 ````css
 /* 예시: Normalize.css */
 html {
