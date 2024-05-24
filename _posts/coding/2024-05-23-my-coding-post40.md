@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 자바스크립트 프로토타입
-date: 2024-05-22 10:00 +0900
+date: 2024-05-23 10:00 +0900
 description: 프로토타입
 image: ../assets/img/javascript06.png
 category: Javascript
