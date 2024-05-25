@@ -3,7 +3,7 @@ layout: post
 title: 자바스크립트 오답정리 (3)
 date: 2024-04-29 20:24 +0900
 description: 자바스크립트 오답정리
-image: ../assets/img/javascirpt.png
+image: ../assets/img/javascript.png
 category: Javascript
 tags: javascript 자바스크립트
 published: true

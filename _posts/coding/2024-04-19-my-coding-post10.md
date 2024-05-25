@@ -3,7 +3,7 @@ layout: post
 title: Javascript 오답정리 1
 date: 2024-04-19 14:20 +0900
 description: 
-image: ../assets/img/javascirpt.png
+image: ../assets/img/javascript.png
 category: Javascript
 tags: 자바스크립트 문제
 published: true
