@@ -3,7 +3,7 @@ layout: post
 title: 자바스크립트 자료형
 date: 2024-04-09 02:13 +0900
 description: 
-image: ../assets/imgjavascript.png
+image: ../assets/img/javascript.png
 category: Javascript
 tags: js javascript 자료형
 published: true
