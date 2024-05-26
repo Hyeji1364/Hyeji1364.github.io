@@ -83,6 +83,7 @@ console.log(myLet); // ReferenceError: Cannot access 'myLet' before initializati
 myLet = 5;
 console.log(myLet); // 5
 ````
+<br>
 
 ### ✅ 정리
 - <b>변수 호이스팅</b>: var로 선언된 변수는 선언이 코드의 맨 위로 끌어올려지지만 값 할당은 원래 위치에 남습니다.
