@@ -65,7 +65,7 @@ myFunction(); // Hello, world!
 함수 선언이 코드의 맨 위로 끌어올려진 것입니다.
 <br>
 ### 💡 let과 const의 호이스팅
-let과 const로 선언된 변수도 호이스팅되지만, 이들은 <span style="color:yellow">"일시적 사각지대"(Temporal Dead Zone, TDZ)</span>에 들어가서 선언하기 전에는 접근할 수 없습니다.<br>
+let과 const로 선언된 변수도 호이스팅되지만, 이들은 <span style="color:red">"일시적 사각지대"(Temporal Dead Zone, TDZ)</span>에 들어가서 선언하기 전에는 접근할 수 없습니다.<br>
 따라서 다음과 같은 코드에서는 오류가 발생합니다.
 
 ````javascript
