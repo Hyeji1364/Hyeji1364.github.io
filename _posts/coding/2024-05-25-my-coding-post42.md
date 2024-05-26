@@ -21,7 +21,7 @@ sitemap: true
 호이스팅은 크게 변수 호이스팅과 함수 호이스팅으로 설명할 수 있습니다.
 예시를 통해 설명해보겠습니다.<br>
 
-### 변수 호이스팅(Variable Hoisting)
+### 📁 변수 호이스팅(Variable Hoisting)
 먼저 변수 호이스팅을 보겠습니다.<br>
 자바스크립트는 변수 선언을 코드의 맨 위로 끌어올립니다.<br>
 하지만 변수의 값 할당은 원래 코드 위치에 남습니다.<br>
@@ -40,8 +40,8 @@ console.log(myVar); // undefined
 myVar = 5;
 console.log(myVar); // 5
 ````
-
-### 함수 호이스팅 (Function Hoisting)
+<br>
+### 📁 함수 호이스팅 (Function Hoisting)
 함수 호이스팅도 비슷합니다.<br>
 함수 선언은 전체 함수가 코드의 맨 위로 끌어올려집니다.<br>
 따라서, 함수 선언 전에 함수를 호출할 수 있습니다.
@@ -63,9 +63,9 @@ function myFunction() {
 myFunction(); // Hello, world!
 ````
 함수 선언이 코드의 맨 위로 끌어올려진 것입니다.
-
-### let과 const의 호이스팅
-let과 const로 선언된 변수도 호이스팅되지만, 이들은 "일시적 사각지대"(Temporal Dead Zone, TDZ)에 들어가서 선언하기 전에는 접근할 수 없습니다.<br>
+<br>
+### 💡 let과 const의 호이스팅
+let과 const로 선언된 변수도 호이스팅되지만, 이들은 <span style="color:yellow">"일시적 사각지대"(Temporal Dead Zone, TDZ)</span>에 들어가서 선언하기 전에는 접근할 수 없습니다.<br>
 따라서 다음과 같은 코드에서는 오류가 발생합니다.
 
 ````javascript
