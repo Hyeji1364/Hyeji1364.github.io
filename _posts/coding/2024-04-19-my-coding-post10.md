@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript 오답정리 1
+title: Javascript 오답정리 (1)
 date: 2024-04-19 14:20 +0900
 description: 
 image: ../assets/img/javascript.png
