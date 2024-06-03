@@ -3,9 +3,9 @@ layout: post
 title: 자바스크립트 객체지향
 date: 2024-05-31 10:00 +0900
 description: 자바스크립트 객체지향
-image: ../assets/img/javascript12.png
+image: ../assets/img/javascript13.png
 category: Javascript
-tags: Javascript 스코프 Scope
+tags: Javascript 객체 객체지향 
 published: true
 sitemap: true
 ---
