@@ -21,60 +21,69 @@ sitemap: true
 <hr />
 
 ### 1. 동기
+
 동기란 코드가 한 줄 한 줄 순서대로 실행되는 방식을 말합니다.<br> 즉, 하나의 작업이 완료되기 전에는 다음 작업이 시작되지 않습니다.<br>
 마치 사람들이 줄을 서서 차례를 기다리는 것과 같습니다.
 <br>
 
 #### 동기의 특징🔍
+
 - 순차적 실행 : 각 작업이 끝난 후에야 다음 작업이 시작됩니다.
 - 블로킹 : 하나의 작업이 완료될 때까지 다음 작업이 기다려야 합니다.
-<br>
+  <br>
 
 ✏ 동기 사용 예제1
-````javascript
-console.log('첫 번째 작업 시작');
+
+```javascript
+console.log("첫 번째 작업 시작");
 for (let i = 0; i < 1000000000; i++) {} // 시간이 걸리는 작업
-console.log('두 번째 작업 시작');
-````
+console.log("두 번째 작업 시작");
+```
+
 위 예제에서 '첫 번째 작업 시작'이 출력된 후, 시간이 많이 걸리는 작업이 완료될 때까지 '두 번째 작업 시작'은 출력되지 않습니다.
 <br>
 
 ✏ 동기 사용 예제2
 
-````javascript
+```javascript
 // 두 숫자를 더하는 동기 함수
 function add(a, b) {
-    return a + b;
+  return a + b;
 }
 
-console.log('첫 번째 작업 시작');
+console.log("첫 번째 작업 시작");
 let result = add(1, 2);
-console.log('두 번째 작업 시작, 결과:', result);
-````
+console.log("두 번째 작업 시작, 결과:", result);
+```
+
 위 예제에서 add 함수는 즉시 결과를 반환하므로, 동기적으로 실행됩니다. '첫 번째 작업 시작'이 출력된 후, add 함수가 호출되어 결과가 계산되고, '두 번째 작업 시작'이 출력됩니다.
 <br>
 
 ### 2. 비동기
+
 비동기란, 작업이 시작된 후 그 작업이 완료될 때까지 기다리지 않고 다음 작업을 바로 시작하는 방식을 말합니다.<br>
 이는 마치 여러 사람이 동시에 일을 처리하는 것과 비슷합니다.
 <br>
 비동기 코드는 주로 시간이 걸리는 작업, 예를 들어 네트워크 요청, 파일 읽기/쓰기, 타이머 설정 등에 사용됩니다.
 
 #### 비동기의 특징🔍
+
 - 동시 실행 가능 : 여러 작업이 동시에 실행될 수 있습니다.
 - 논블로킹 : 한 작업이 완료될 때까지 기다리지 않고 다음 작업을 바로 시작합니다.
-<br>
+  <br>
 
 ✏ 비동기 사용 예제1
-````javascript
-console.log('첫 번째 작업 시작');
+
+```javascript
+console.log("첫 번째 작업 시작");
 
 setTimeout(() => {
-    console.log('두 번째 작업 시작 (비동기)');
+  console.log("두 번째 작업 시작 (비동기)");
 }, 1000); // 1초 후에 실행
 
-console.log('세 번째 작업 시작');
-````
+console.log("세 번째 작업 시작");
+```
+
 위 코드에서 '첫 번째 작업 시작'이 출력된 후, setTimeout 함수는 바로 실행되지만, 1초 후에 '두 번째 작업 시작 (비동기)'가 출력될 때까지 기다리지 않고 '세 번째 작업 시작'이 바로 출력됩니다.
 <br>
 
@@ -82,13 +91,16 @@ console.log('세 번째 작업 시작');
 <br>
 
 ### 💡 왜 비동기를 사용할까 ?
+
 비동기는 주로 다음과 같은 상황에서 사용됩니다.
+
 - 효율성 : 여러 작업을 동시에 처리하여 시간 효율성을 높일 수 있습니다.
 - 사용자 경험 : 긴 작업이 실행되는 동안에도 다른 작업을 처리할 수 있어 웹 페이지가 멈추지 않게 할 수 있습니다.
 
 <br>
 
 ### 비동기의 실제 활용
+
 비동기는 주로 네트워크 요청, 타이머, 이벤트 처리 등에서 사용됩니다.
 
 <br>
@@ -97,60 +109,64 @@ console.log('세 번째 작업 시작');
 
 #### 🎈 1. 콜백(callback) 사용
 
- ````javascript
- console.log('첫 번째 작업 시작');
+```javascript
+console.log("첫 번째 작업 시작");
 
 setTimeout(() => {
-    console.log('두 번째 작업 시작 (비동기)');
+  console.log("두 번째 작업 시작 (비동기)");
 }, 1000); // 1초 후에 실행
 
-console.log('세 번째 작업 시작');
- ````
- `setTimeout` 함수는 지정된 시간이 지난 후 콜백 함수를 실행합니다. <br>
- 이 예제에서 '첫 번째 작업 시작'과 '세 번째 작업 시작'이 즉시 출력되고, 1초 후에 '두 번째 작업 시작 (비동기)'이 출력됩니다
+console.log("세 번째 작업 시작");
+```
+
+`setTimeout` 함수는 지정된 시간이 지난 후 콜백 함수를 실행합니다. <br>
+이 예제에서 '첫 번째 작업 시작'과 '세 번째 작업 시작'이 즉시 출력되고, 1초 후에 '두 번째 작업 시작 (비동기)'이 출력됩니다
 <br>
 
 #### 🎈 프로미스(Promise) 사용
 
- ````javascript
-console.log('첫 번째 작업 시작');
+```javascript
+console.log("첫 번째 작업 시작");
 
 let promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('두 번째 작업 시작 (비동기)');
-    }, 1000);
+  setTimeout(() => {
+    resolve("두 번째 작업 시작 (비동기)");
+  }, 1000);
 });
 
 promise.then((message) => {
-    console.log(message);
+  console.log(message);
 });
 
-console.log('세 번째 작업 시작');
-````
+console.log("세 번째 작업 시작");
+```
+
 <br>
 
 #### 🎈 async/await 사용
 
- ````javascript
- console.log('첫 번째 작업 시작');
+```javascript
+console.log("첫 번째 작업 시작");
 
 function waitFor(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function asyncFunction() {
-    await waitFor(1000);
-    console.log('두 번째 작업 시작 (비동기)');
+  await waitFor(1000);
+  console.log("두 번째 작업 시작 (비동기)");
 }
 
 asyncFunction();
 
-console.log('세 번째 작업 시작');
- ````
+console.log("세 번째 작업 시작");
+```
+
 async/await는 비동기 코드를 동기 코드처럼 작성할 수 있게 해줍니다.<br>
 async 함수 내에서 await 키워드를 사용하면 프라미스가 해결될 때까지 기다립니다. <br>
 이 예제에서 '첫 번째 작업 시작'과 '세 번째 작업 시작'이 즉시 출력되고, 1초 후에 '두 번째 작업 시작 (비동기)'이 출력됩니다.
 
 ### 동기와 비동기의 선택
+
 - 동기 코드 사용 : 즉시 완료되는 작업이나 간단한 연산에 사용합니다. 예를 들어, 배열의 길이를 계산하거나, 두 숫자를 더하는 경우 등에 사용할 수 있습니다.
 - 비동기 코드 사용 : 시간이 걸리는 작업이나 외부 자원에 접근하는 작업에 사용합니다. 예를 들어, 서버에 데이터를 요청하거나, 파일을 읽고 쓰는 경우, 타이머를 설정하는 경우 등에 사용할 수 있습니다.
