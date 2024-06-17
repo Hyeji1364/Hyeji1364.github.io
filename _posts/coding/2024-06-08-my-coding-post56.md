@@ -1,9 +1,9 @@
 ---
 layout: post
 title: React의 개념 및 주요 특징
-date: 2024-06-07 10:00 +0900
+date: 2024-06-08 10:00 +0900
 description: React의 주요 특징
-image: ../assets/img/react01.png
+image: ../assets/img/javascript18.png
 category: Javascript
 tags: React
 published: true
