@@ -4,7 +4,7 @@ title: Javascript ajax
 date: 2024-06-05 10:00 +0900
 description: Javascript ajax
 image: ../assets/img/javascript17.png
-category: Javascript ajax
+category: Javascript
 tags: Javascript ajax
 published: true
 sitemap: true

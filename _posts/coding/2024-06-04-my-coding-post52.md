@@ -4,7 +4,7 @@ title: Javascript Property
 date: 2024-06-04 10:00 +0900
 description: Javascript Property
 image: ../assets/img/javascript16.png
-category: Javascript 프로퍼티
+category: Javascript
 tags: Javascript 프로퍼티
 published: true
 sitemap: true
