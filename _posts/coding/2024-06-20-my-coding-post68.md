@@ -1,118 +1,107 @@
 ---
 layout: post
-title: state vs props
+title: 메모이제이션
 date: 2024-06-20 10:00 +0900
-description: React의 state와 props
+description: 메모이제이션
 image: ../assets/img/react10.png
 category: React
-tags: React state props
+tags: React 메모이제이션
 published: true
 sitemap: true
 ---
 
 # REACT
 
-## state와 props
+## 메모이제이션 : memo, useMemo, useCallback
 
-리액트(React)에서 state와 props는 컴포넌트의 렌더링 결과물에 영향을 주는 두 가지 중요한 개념입니다. <br>
-이 두 객체는 리액트 애플리케이션에서 데이터 흐름을 관리하고, 컴포넌트 간의 상호작용을 정의하는 데 사용됩니다. <br>
-이번 글에서는 state와 props의 차이점과 사용 방법에 대해 알아보겠습니다.
+리액트에서 성능 최적화를 위해 메모이제이션을 활용하는 방법은 중요합니다. <br>
+메모이제이션이란 컴퓨터 프로그램이 동일한 계산을 반복해야 할 때, 이전에 계산한 값을 메모리에 저장함으로써 동일한 계산의 반복 수행을 제거하여 프로그램 속도를 빠르게 하는 기술입니다. <br>
+리액트에서는 memo, useMemo, useCallback 세 가지 주요 메모이제이션 도구를 제공합니다.
 
 <br>
 
-### 💛 Props: 부모 컴포넌트에서 자식 컴포넌트로 전달되는 값
+### 💛 memo
 
-`props`는 부모 컴포넌트에서 자식 컴포넌트로 값을 전달할 때 사용됩니다. <br>
-마치 함수의 매개변수처럼, props는 컴포넌트에 데이터를 전달하는 역할을 합니다. <br>
-이를 통해 부모 컴포넌트는 자식 컴포넌트에 필요한 데이터를 전달하고, 자식 컴포넌트는 이를 받아서 화면에 렌더링할 수 있습니다.
+리액트의 `memo`는 고차 컴포넌트(Higher Order Component)로, 컴포넌트의 결과를 메모이제이션합니다.<br>
+즉, 동일한 props로 컴포넌트가 다시 렌더링되는 것을 방지하여 불필요한 렌더링을 줄입니다.
 <br>
 
 예시 :
 
 ```javascript
-import React from "react";
+import React, { memo } from "react";
 
-function ChildComponent(props) {
-  return <p>{props.message}</p>;
-}
+const MyComponent = ({ value }) => {
+  console.log("Rendering MyComponent");
+  return <div>{value}</div>;
+};
 
-function ParentComponent() {
-  return <ChildComponent message="Hello, World!" />;
-}
+export default memo(MyComponent);
 ```
 
-위 예제에서, ParentComponent는 ChildComponent에 message라는 props를 전달합니다. ChildComponent는 props.message를 받아서 화면에 "Hello, World!"라는 문구를 렌더링합니다.
+위 예시에서 MyComponent는 동일한 props가 전달되면 다시 렌더링되지 않습니다. memo를 사용함으로써 컴포넌트의 성능을 최적화할 수 있습니다.
 
 <br>
 
-#### 주요 특징
+### 💛 useMemo
 
-- props는 읽기 전용입니다. 자식 컴포넌트는 전달받은 props를 변경할 수 없습니다.
-- 부모 컴포넌트는 자식 컴포넌트에 여러 개의 props를 전달할 수 있습니다.
-- props를 통해 컴포넌트 간에 데이터가 전달됩니다.
-
-<br>
-
-### 💛 State: 컴포넌트 내에서 관리되는 변경 가능한 데이터
-
-`state`는 컴포넌트 내에서만 값이 이동하는 변경 가능한 데이터입니다.<br>
-마치 함수 내에 선언된 변수처럼, state는 컴포넌트 내부에서 관리되고, 해당 컴포넌트의 상태를 나타냅니다. <br>
-state가 변경되면, 리액트는 자동으로 해당 컴포넌트를 다시 렌더링하여 변경된 내용을 반영합니다.
-
-<br>
+`useMemo`는 값의 메모이제이션을 위해 사용됩니다. <br>
+복잡한 계산을 수행하는 함수의 결과를 메모이제이션하여 불필요한 재계산을 방지합니다. <br>
+첫 번째 인자로 전달된 함수의 반환 값을 메모이제이션하고, 두 번째 인자로 전달된 의존성 배열이 변경될 때만 함수를 다시 실행합니다.
 
 예시 :
 
 ```javascript
-import React, { useState } from "react";
+import React, { useMemo } from "react";
 
-function Counter() {
+const MyComponent = ({ items }) => {
+  const sortedItems = useMemo(() => {
+    console.log("Sorting items");
+    return items.sort((a, b) => a - b);
+  }, [items]);
+
+  return (
+    <ul>
+      {sortedItems.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  );
+};
+```
+
+위 예시에서 `items`가 변경될 때만 `sortedItems`가 다시 계산됩니다. 이를 통해 불필요한 정렬 작업을 피할 수 있습니다.
+
+<br>
+
+### 💛 useCallback
+
+`useCallback`은 함수의 메모이제이션을 위해 사용됩니다. 첫 번째 인자로 전달된 함수를 메모이제이션하고, 두 번째 인자로 전달된 의존성 배열이 변경될 때만 함수를 다시 생성합니다. 주로 자식 컴포넌트에 콜백 함수를 전달할 때 유용합니다.
+
+```javascript
+import React, { useState, useCallback } from "react";
+
+const MyButton = ({ onClick }) => <button onClick={onClick}>Click me</button>;
+
+const MyComponent = () => {
   const [count, setCount] = useState(0);
+
+  const handleClick = useCallback(() => {
+    setCount((prevCount) => prevCount + 1);
+  }, []);
 
   return (
     <div>
       <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <MyButton onClick={handleClick} />
     </div>
   );
-}
+};
 ```
 
-위 예제에서, `Counter` 컴포넌트는 `count`라는 state를 가지고 있으며, `setCount` 함수를 통해 count를 변경할 수 있습니다. <br>
-버튼을 클릭하면 count가 증가하고, 컴포넌트는 새로운 count 값을 반영하여 다시 렌더링됩니다.
+위 예시에서 handleClick 함수는 count 상태가 변경될 때만 새로 생성됩니다. 이를 통해 MyButton 컴포넌트가 불필요하게 다시 렌더링되는 것을 방지할 수 있습니다.
 
-<br>
+## 결론
 
-#### 주요 특징
-
-- state는 컴포넌트 내에서만 관리됩니다.
-- state는 변경 가능하며, 변경될 때마다 컴포넌트가 다시 렌더링됩니다.
-- state는 주로 사용자 입력이나 네트워크 요청 등의 동적 데이터를 관리하는 데 사용됩니다.
-
-<br>
-
-### Props와 State의 차이점
-
-#### 1. 데이터 흐픔
-
-- props: 부모 컴포넌트에서 자식 컴포넌트로 데이터가 전달됩니다.
-- state: 컴포넌트 내에서만 데이터가 이동합니다.
-
-#### 2. 변경 가능성
-
-- props: 읽기 전용으로, 자식 컴포넌트에서 변경할 수 없습니다.
-- state: 변경 가능하며, 컴포넌트 내에서 자유롭게 업데이트할 수 있습니다.
-
-#### 3. 역할
-
-- props: 컴포넌트 간에 데이터를 전달하고, 상호작용을 정의합니다.
-- state: 컴포넌트의 동적 데이터를 관리하고, 사용자 인터페이스의 변화를 처리합니다.
-
-<br>
-
-### 결론
-
-리액트에서 state와 props는 컴포넌트의 렌더링 결과물에 영향을 주는 중요한 개념입니다. <br>
-props는 부모 컴포넌트에서 자식 컴포넌트로 데이터를 전달하는 역할을 하며, state는 컴포넌트 내에서 관리되는 변경 가능한 데이터를 나타냅니다. <br>
-이 두 개념을 잘 이해하고 활용하면, 리액트 애플리케이션의 데이터 흐름을 효과적으로 관리하고, 사용자 인터페이스를 동적으로 업데이트할 수 있습니다. <br>
-리액트의 강력한 기능을 최대한 활용하기 위해서는 state와 props의 차이점을 명확히 이해하고, 적절히 사용하는 것이 중요합니다.
+리액트에서 메모이제이션을 활용하면 불필요한 렌더링과 계산을 줄여 성능을 최적화할 수 있습니다. <br> memo는 컴포넌트 자체를 메모이제이션하고, useMemo는 값의 계산 결과를 메모이제이션하며, useCallback은 함수를 메모이제이션합니다. <br>
+각 도구를 적절히 사용하여 효율적인 리액트 애플리케이션을 개발할 수 있습니다.
