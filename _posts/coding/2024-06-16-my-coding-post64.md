@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 리액트의 생명 주기 함수와 생명 주기 메서드
-date: 2024-06-15 10:00 +0900
+date: 2024-06-16 10:00 +0900
 description: SPA와 Router
-image: ../assets/img/react08.png
+image: ../assets/img/react09.png
 category: React
 tags: React SPA Router
 published: true
