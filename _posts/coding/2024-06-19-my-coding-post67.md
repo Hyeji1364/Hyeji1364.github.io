@@ -1,7 +1,7 @@
 ---
 layout: post
 title: state vs props
-date: 2024-06-17 10:00 +0900
+date: 2024-06-19 10:00 +0900
 description: React의 state와 props
 image: ../assets/img/react10.png
 category: React
@@ -14,7 +14,7 @@ sitemap: true
 
 ## state와 props
 
-fl액트(React)에서 state와 props는 컴포넌트의 렌더링 결과물에 영향을 주는 두 가지 중요한 개념입니다. <br>
+리액트(React)에서 state와 props는 컴포넌트의 렌더링 결과물에 영향을 주는 두 가지 중요한 개념입니다. <br>
 이 두 객체는 리액트 애플리케이션에서 데이터 흐름을 관리하고, 컴포넌트 간의 상호작용을 정의하는 데 사용됩니다. <br>
 이번 글에서는 state와 props의 차이점과 사용 방법에 대해 알아보겠습니다.
 
