@@ -29,7 +29,7 @@ sitemap: true
 ### 2. JSX (JavaScript XML)
 
 - 리액트는 JSX라는 특별한 문법을 사용하여 HTML과 같은 구문을 자바스크립트 코드 내에 작성할 수 있습니다. JSX는 직관적이고 가독성이 높아, 개발자들이 UI를 설계하고 디버깅하는 데 큰 도움이 됩니다.
-- 예: <div>Hello, {name}!</div>
+- 예: <div>`Hello, {name}!`</div>
   <br>
 
 ### 3. 가상 DOM(Virtual DOM)
