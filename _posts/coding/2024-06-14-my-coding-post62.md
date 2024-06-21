@@ -3,7 +3,7 @@ layout: post
 title: Webpack
 date: 2024-06-14 10:00 +0900
 description: Webpack
-image: ../assets/img/react06.png
+image: ../assets/img/react07.png
 category: React
 tags: React Webpack
 published: true
