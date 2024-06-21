@@ -1,11 +1,11 @@
 ---
 layout: post
-title: React의 개념 및 주요 특징
-date: 2024-06-07 10:00 +0900
-description: React의 주요 특징
-image: ../assets/img/react01.png
-category: React
-tags: React
+title: 상세페이지 만들기 - 1
+date: 2024-06-18 10:00 +0900
+description: 강아지 영양제 상세페이지 만들기
+image: ../assets/img/javascript1.png
+category: Photoshop
+tags: Photoshop
 published: true
 sitemap: true
 ---
@@ -20,40 +20,40 @@ sitemap: true
 
 ## 리액트의 주요 특징
 
-### 1. 컴포넌트 기반 아키텍처
+1. 컴포넌트 기반 아키텍처
 
 - 리액트는 애플리케이션을 독립적이고 재사용 가능한 컴포넌트로 나누어 개발할 수 있게 해줍니다. 각 컴포넌트는 자신의 상태(state)와 속성(props)을 가지며, 이를 통해 복잡한 UI를 효율적으로 관리할 수 있습니다.
 - 예: 버튼, 입력 폼, 모달 창 등.
   <br>
 
-### 2. JSX (JavaScript XML)
+2. JSX (JavaScript XML)
 
 - 리액트는 JSX라는 특별한 문법을 사용하여 HTML과 같은 구문을 자바스크립트 코드 내에 작성할 수 있습니다. JSX는 직관적이고 가독성이 높아, 개발자들이 UI를 설계하고 디버깅하는 데 큰 도움이 됩니다.
 - 예: <div>Hello, {name}!</div>
   <br>
 
-### 3. 가상 DOM(Virtual DOM)
+3. 가상 DOM(Virtual DOM)
 
 - 리액트는 가상 DOM을 사용하여 실제 DOM과의 상호작용을 최소화하고 성능을 최적화합니다. 가상 DOM은 UI의 상태 변화가 일어날 때마다 새로운 가상 DOM 트리를 생성하고, 이전 상태와 비교하여 변경된 부분만 실제 DOM에 업데이트합니다.
 - 이는 빠르고 효율적인 렌더링을 가능하게 합니다.
   <br>
 
-### 4. 단방향 데이터 흐름(Unidirectional Data Flow)
+4. 단방향 데이터 흐름(Unidirectional Data Flow)
 
 - 리액트는 단방향 데이터 흐름을 채택하여 데이터의 흐름을 예측 가능하게 합니다. 부모 컴포넌트에서 자식 컴포넌트로 데이터가 전달되며, 데이터의 변화는 부모 컴포넌트에서 시작하여 하위 컴포넌트로 전파됩니다.
 - 이는 데이터 관리와 디버깅을 쉽게 만듭니다.
 
-### 5. 상태 관리(State Management)
+5. 상태 관리(State Management)
 
 - 컴포넌트는 자체적인 상태를 가질 수 있으며, 상태는 시간이 지남에 따라 변할 수 있는 데이터를 의미합니다. 상태가 변경되면 해당 컴포넌트와 그 하위 컴포넌트가 자동으로 다시 렌더링됩니다.
 - 리액트의 상태 관리 기능을 확장하기 위해 Redux, MobX와 같은 외부 라이브러리를 사용할 수 있습니다.
 
-### 6. 생명주기 메서드(Lifecycle Methods)
+6. 생명주기 메서드(Lifecycle Methods)
 
 - 리액트 클래스 컴포넌트는 특정 시점에 자동으로 호출되는 생명주기 메서드를 제공합니다. 이는 컴포넌트가 생성될 때, 업데이트될 때, 제거될 때 등의 특정 시점에 원하는 동작을 정의할 수 있게 해줍니다.
 - 주요 생명주기 메서드: `componentDidMount`, `componentDidUpdate`, `componentWillUnmount` 등.
 
-### 7. 훅(Hooks)
+7. 훅(Hooks)
 
 - 리액트 16.8 버전부터 도입된 훅은 함수형 컴포넌트에서 상태와 생명주기 기능을 사용할 수 있게 해줍니다. 대표적인 훅으로는 useState, useEffect, useContext 등이 있습니다.
 - 훅을 사용하면 클래스 컴포넌트의 복잡한 기능들을 간결하게 구현할 수 있습니다.
