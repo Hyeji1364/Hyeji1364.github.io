@@ -3,7 +3,7 @@ layout: post
 title: 메모이제이션
 date: 2024-06-20 10:00 +0900
 description: 메모이제이션
-image: ../assets/img/react10.png
+image: ../assets/img/react11.png
 category: React
 tags: React 메모이제이션
 published: true
