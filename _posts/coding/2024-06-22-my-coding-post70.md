@@ -10,7 +10,7 @@ published: true
 sitemap: true
 ---
 
-# API 🗂
+# API
 
 ## 정의
 
