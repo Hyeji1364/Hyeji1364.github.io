@@ -3,7 +3,7 @@ layout: post
 title: 홈페이지 속도를 개선하는 방법
 date: 2024-06-23 10:00 +0900
 description: 홈페이지 속도를 개선하는 방법
-image: https://github.com/Hyeji1364/class2024/assets/161557112/1f8ca120-a8aa-4f76-8cf7-79e64d6d11a5
+image: https://github.com/Hyeji1364/class2024/assets/161557112/27cf92c8-13b0-4973-8d16-a43f6c8eb158
 category: ETC
 tags: 홈페이지
 published: true
