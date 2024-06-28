@@ -1,7 +1,7 @@
 ---
 layout: post
 title: id와 class의 차이점
-date: 2024-06-25 10:00 +0900
+date: 2024-06-26 10:00 +0900
 description: id와 class의 차이점
 image: https://github.com/Hyeji1364/class2024/assets/161557112/7d6d753f-604b-43a6-915e-c0c0d4a82356
 category: HTML
