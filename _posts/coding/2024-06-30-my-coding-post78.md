@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS Display속성
-date: 2024-06-29 10:00 +0900
+date: 2024-06-30 10:00 +0900
 description: CSS Display속성
 image: https://github.com/Hyeji1364/class2024/assets/161557112/396bbc8c-c72b-4d48-991c-b961a1e33e79
 category: CSS
