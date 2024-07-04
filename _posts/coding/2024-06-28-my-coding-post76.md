@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: javascript 이벤트 버블링과 이벤트 캡처
 date: 2024-06-28 10:00 +0900
 description: javascript 이벤트 버블링과 이벤트 캡처
 image: https://github.com/Hyeji1364/class2024/assets/161557112/d817744a-9d22-4d92-a9c8-aafc9026990b
