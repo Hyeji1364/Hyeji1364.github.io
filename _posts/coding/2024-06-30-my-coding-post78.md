@@ -1,139 +1,119 @@
 ---
 layout: post
-title: CSS 우선순위
+title: CSS Display속성
 date: 2024-06-29 10:00 +0900
-description: CSS 우선순위
-image: https://github.com/Hyeji1364/class2024/assets/161557112/c62721e3-1ad4-4a59-9798-f54b3e7537e6
+description: CSS Display속성
+image: https://github.com/Hyeji1364/class2024/assets/161557112/396bbc8c-c72b-4d48-991c-b961a1e33e79
 category: CSS
 tags: CSS
 published: true
 sitemap: true
 ---
 
-# CSS 우선순위
+# CSS Display 속성
 
-웹 개발에서 CSS(Cascading Style Sheets)는 HTML 요소들의 스타일을 정의하는 데 사용됩니다. <br>
-하지만 여러 가지 방법으로 스타일을 적용하다 보면 어떤 스타일이 최종적으로 적용될지 혼란스러울 수 있습니다. <br>
-이 문제를 해결하기 위해 CSS는 우선순위 규칙을 가지고 있습니다. <br>
-이 글에서는 CSS 우선순위에 대해 자세히 설명하겠습니다.
+## Block, Inline, Inline-Block의 차이점
+
+웹 개발에서 CSS의 display 속성은 HTML 요소의 레이아웃과 배치 방식을 결정하는 중요한 역할을 합니다. <br>
+이 글에서는 inline, block, inline-block의 차이점과 각각의 특성을 설명하겠습니다.
 <br>
 
-### 📁 01. !important 키워드
+### Inline
 
-가장 높은 우선순위를 가지는 것은 속성 값 뒤에 `!important`를 붙인 속성입니다. <br>
-이 키워드는 특정 스타일을 무조건 적용하고 싶을 때 사용합니다.
-<br>
-
-예시
-
-```css
-p {
-  color: blue !important;
-}
-```
-
-여기서 모든 `<p>` 요소의 글자 색은 무조건 파란색이 됩니다. <br>
-!important는 매우 강력한 도구이지만, 남용하면 유지보수가 어려워질 수 있으므로 신중하게 사용해야 합니다.
-
-<br>
-
-### 📁 02. HTML에서 style을 직접 지정한 속성
-
-HTML 요소에 직접 스타일을 지정하는 방식은 두 번째로 높은 우선순위를 가집니다.
+inline 요소는 <mark>텍스트의 크기 만큼만 공간을 점유</mark>하며, 줄바꿈을 하지 않습니다.<br>
+대표적인 inline 요소로는 `<span>`, `<a>`, `<strong>` 등이 있습니다.
 <br>
 
 예시
 
 ```html
-<p style="color: red;">This is a paragraph.</p>
+<span>This is inline</span> <span>element</span>
 ```
 
-위의 예제에서는 `p` 요소의 글자 색이 인라인 스타일에 의해 빨간색으로 지정됩니다.
+위의 코드를 보면, `span` 요소들이 한 줄에 나란히 배치됩니다. <br>
+`inline` 요소는 너비와 높이를 설정할 수 없으며, 마진과 패딩을 설정해도 좌우 공간만 반영됩니다.
 
 <br>
 
-### 📁 03. #id로 지정한 속성
+### Block
 
-ID 셀렉터는 세 번째로 높은 우선순위를 가집니다. <br>
-ID는 문서 내에서 고유해야 하며, 다음과 같이 사용됩니다.
+`block` 요소는 <mark>항상 한 줄을 점유</mark>하며, 다음 요소는 자동으로 줄바꿈됩니다. <br>
+대표적인 block 요소로는 `<div>`, `<p>`, `<h1>` 등이 있습니다.
 <br>
 
-```css
-#unique {
-  color: green;
-}
-```
-
-<br>
-````html
-<p id="unique">This is a unique paragraph.</p>
-````
-이 경우, ID가 unique인 요소의 글자 색은 녹색으로 지정됩니다.
-
-<br>
-
-### 📁 04. .클래스, :추상 클래스로 지정한 속성
-
-클래스 셀렉터와 의사 클래스(예: :hover, :active)는 네 번째 우선순위를 가집니다. <br>
-
-```css
-.highlight {
-  color: yellow;
-}
-```
-
-```html
-<p class="highlight">This is a highlighted paragraph.</p>
-```
-
-여기서 `highlight` 클래스를 가진 요소의 글자 색은 노란색이 됩니다.
-
-<br>
-
-### 📁 05. 태그 이름으로 지정한 속성
-
-태그 이름으로 지정한 속성은 다섯 번째 우선순위를 가집니다. <br>
-태그 이름을 직접 사용하여 스타일을 지정할 수 있습니다.
-<br>
 예시
 
-```css
-p {
-  color: orange;
-}
+```html
+<div>This is a block element</div>
+<div>Another block element</div>
 ```
 
-이 경우 모든 `p` 요소의 글자 색은 주황색이 됩니다.
+위의 코드를 보면, 각 `div` 요소가 한 줄씩 차지하여 배치됩니다.<br>
+block 요소는 너비와 높이, 마진, 패딩 등을 자유롭게 설정할 수 있습니다.
+
 <br>
 
-### 📁 06. 상위 객체에 의해 상속된 속성
+### Inline-Block
 
-마지막으로, 상위 객체에 의해 상속된 속성이 가장 낮은 우선순위를 가집니다. <br>
-예를 들어, 상위 요소에 텍스트 색상을 지정하면 하위 요소들도 이 색상을 상속받게 됩니다. <br>
-다음과 같은 예시가 있습니다.
-
-```css
-div {
-  color: purple;
-}
-```
+`inline-block` 요소는 `inline`과 `block` 속성의 특징을 모두 가지고 있습니다.<br>
+기본적으로는 inline 요소처럼 동작하지만, 너비와 높이를 설정할 수 있으며, line-height도 적용할 수 있습니다. <br>
+또한, 줄바꿈 없이 동일한 라인에 배치할 수 있습니다.
+<br>
 
 ```html
-<div>
-  <p>This paragraph will inherit the color from the parent div.</p>
+<span style="display:inline-block; width:100px; height:50px;"
+  >Inline-block element</span
+>
+<span style="display:inline-block; width:100px; height:50px;"
+  >Another inline-block</span
+>
+```
+
+위의 코드를 보면, inline-block 요소들이 한 줄에 나란히 배치되지만, 너비와 높이를 설정하여 블록 요소처럼 크기를 조절할 수 있습니다.
+
+<br>
+
+## ✨비교 요약
+
+- Inline: 텍스트 크기만큼 공간을 차지하며, 줄바꿈이 되지 않습니다. 너비와 높이를 설정할 수 없습니다.
+- Block: 한 줄 전체를 차지하며, 다음 요소는 줄바꿈됩니다. 너비와 높이, 마진, 패딩 등을 설정할 수 있습니다.
+- Inline-Block: inline과 같은 라인에 배치되지만, 너비와 높이를 설정할 수 있습니다. 줄바꿈 없이 배치되며, 블록 요소처럼 크기를 조절할 수 있습니다.
+
+<br>
+
+## 활용 예시
+
+Inline: 텍스트 내부의 일부를 스타일링할 때 사용합니다. 예를 들어, 강조 표시나 링크 등을 스타일링할 때 유용합니다.
+
+```html
+<p>This is a <span style="color:red;">highlighted</span> text.</p>
+```
+
+<br>
+
+Block: 레이아웃을 구성할 때 사용합니다. 섹션을 구분하거나, 컨테이너를 만들 때 주로 사용됩니다.
+
+```html
+<div style="border:1px solid black; padding:10px;">
+  <p>This is a block container.</p>
 </div>
 ```
 
-여기서 div 요소 내부의 `p` 요소는 글자 색을 상속받아 보라색이 됩니다.
-
 <br>
 
-## ✨ 우선순위의 결합
+Inline-Block: 레이아웃을 구성하면서, 요소를 한 줄에 배치하고 싶을 때 사용합니다. <br>
+버튼이나 메뉴 항목 등을 스타일링할 때 유용합니다.
 
-때로는 여러 규칙이 결합되어 사용됩니다. <br>
-예를 들어, 특정 클래스와 ID가 결합된 경우, 이들의 우선순위를 합산하여 최종 스타일이 결정됩니다. <br>
-따라서 우선순위를 잘 이해하고 사용하면 원하는 스타일을 더 정확하게 적용할 수 있습니다.
-<br>
+```html
+<span style="display:inline-block; padding:10px; border:1px solid black;"
+  >Button 1</span
+>
+<span style="display:inline-block; padding:10px; border:1px solid black;"
+  >Button 2</span
+>
+```
 
-CSS 우선순위를 이해하고 적절하게 사용하는 것은 웹 디자인에서 매우 중요합니다. <br>
-이를 통해 더 효율적이고 일관된 스타일링을 적용할 수 있으며, 유지보수 또한 용이해집니다. <br>
+## 결론
+
+CSS의 display 속성은 요소의 레이아웃과 배치에 큰 영향을 미칩니다. <br>
+inline, block, inline-block의 차이점을 이해하면 더 효과적이고 유연하게 웹 페이지를 디자인할 수 있습니다. <br>
