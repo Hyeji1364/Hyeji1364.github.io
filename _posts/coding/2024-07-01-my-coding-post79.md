@@ -3,7 +3,7 @@ layout: post
 title: IR효과
 date: 2024-07-01 10:00 +0900
 description: IR효과
-image: https://github.com/Hyeji1364/class2024/assets/161557112/396bbc8c-c72b-4d48-991c-b961a1e33e79
+image: https://github.com/user-attachments/assets/2a438173-0906-4dfb-abd8-0c36fb6ed45c
 category: CSS
 tags: CSS IR효과
 published: true
@@ -129,6 +129,7 @@ IR(이미지 대체 텍스트 제공, Image Replacement) 기법은 CSS를 이용
 
 ## 결론
 
-IR 기법은 웹 접근성을 높이기 위해 중요한 역할을 합니다.` ir_pm`, `ir_wa`, `ir_so`와 같은 클래스들은 각각의 상황에 맞는 이미지 대체 텍스트를 제공하는 데 유용합니다. <br>
+IR 기법은 웹 접근성을 높이기 위해 중요한 역할을 합니다.<br>
+`ir_pm`, `ir_wa`, `ir_so`와 같은 클래스들은 각각의 상황에 맞는 이미지 대체 텍스트를 제공하는 데 유용합니다. <br>
 이를 통해 시각 장애가 있는 사용자들도 웹 콘텐츠를 쉽게 접근하고 이해할 수 있게 됩니다. <br>
 웹 개발자는 이러한 기법들을 적절히 활용하여 모든 사용자가 접근 가능한 웹 사이트를 만드는 데 기여할 수 있습니다.
