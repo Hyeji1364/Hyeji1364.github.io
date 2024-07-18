@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 토끼 3D효과
-date: 2024-07-15 10:00 +0900
+date: 2024-07-16 10:00 +0900
 description: 토끼 3D효과
 image: https://github.com/user-attachments/assets/a23ec002-0ac3-4727-8865-3458d85ebbd2
 category: Illustrator
